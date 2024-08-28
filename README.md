@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: https://naijangh.github.io/pui-hw-njangha/
+Deployed website: <a href="https://naijangh.github.io/pui-hw-njangha/">https://naijangh.github.io/pui-hw-njangha/</a>
 
-Repository link: https://github.com/naijangh/pui-hw-njangha
+Repository link: <a href="https://github.com/naijangh/pui-hw-njangha">https://github.com/naijangh/pui-hw-njangha</a>
