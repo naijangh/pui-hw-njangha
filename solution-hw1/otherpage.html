@@ -1,15 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <meta charset="UTF-8">
-  <title>Page Title</title>
-  
+
+  <head>
+    <link rel="stylesheet" href="/solution-hw1/css/bunbun.css"/>
+  <title>Bun Bun Bake Shop</title>
+</head>
+<!--PRODUCT PAGE-->
+
   <body>
+    <!--This is the header and nav section-->
+    <header>
+      <a href=".index.html"><img class="logo" src="/assets/logo/logo-01.svg" alt="Bakery Logo"></a>
+      <hr> <!--per html-easy.com, this tag makes a horizantal line in HTML-->
+    </header>
 
-    <h1>Other Page</h1>
+    <main>
+    <!--for central alignment?-->
+        
+      <nav> 
+        <p> <a class="nav-element" href=".index.html">Products</a></p>
 
-    <p>
-        Hello!
-    </p>
+        <p> <a class="nav-element" href=".otherpage.html">Cart</a></p>
+      </nav>
 
+      <br>
+
+      <h3>Shopping Cart</h3>
+
+      <!--making this an object or class? that always has an image, remove button, title, glazing, pack size, price, etc?)-->
+      <section class="item-in-cart">
+        <img class="cart-image" src="/assets/products/original-cinnamon-roll.jpg" alt="image of original cinnamon roll">
+        <p class="remove-button">Remove</p> <!--should 'remove' be a button once it is functional?-->
+        <p>Original Cinnamon Roll</p>
+        <p>Glazing: Keep original</p>
+        <p>Pack Size: 1</p>
+        <p>$2.49</p>
+      </section>
+
+      <section class="item-in-cart">
+        <img class="cart-image" src="/assets/products/double-chocolate-cinnamon-roll.jpg" alt="image of double chocolate cinnamon roll">
+        <p class="remove-button">Remove</p> <!--should 'remove' be a button once it is functional?-->
+        <p>Double Chocolate Cinnamon Roll</p>
+        <p>Glazing: Sugar milk</p>
+        <p>Pack Size: 6</p>
+        <p>$27.45</p>
+      </section>
+
+      <hr>
+      <p>Total: $29.94</p>
+      <button>Checkout</button>
+
+    </main>
   </body>
+
 </html>

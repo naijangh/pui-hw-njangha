@@ -1,0 +1,54 @@
+/* SHARED PAGE FEATURES */
+
+.logo {
+    width: 400px;
+}
+
+a.nav-element {
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+}
+.nav-element:hover {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+
+/* PRODUCT PAGE */
+.product-page-image {
+    width: 400px;
+    height: 400px;
+    border: solid black;
+}
+
+/*constraints for yellow highlight box*/
+.product-page-setup {
+    width: 410px;
+}
+.product-page-setup:hover{
+    font-weight: bold;
+    background-color: yellow; /*or border?*/
+}
+
+/*
+.central-alignment {
+    align-content: center;
+}
+    */
+
+/* PRODUCT DESCRIPTION PAGE */
+
+.product-desc-image {
+    width: 600px;
+    height: 600px;
+    border: solid black;
+}
+
+
+/* PRODUCT CART PAGE */
+.cart-image {
+    width: 200px;
+    height: 200px;
+    border: solid black;
+}
