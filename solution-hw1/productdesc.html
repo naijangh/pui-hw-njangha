@@ -18,7 +18,7 @@
     <main>
         <!-- This is the nav section-->
         <nav> 
-          <p> <a class="nav-element" href="/solution-hw1/index.html">Products</a></p>
+          <p> <a class="nav-element" id="product-nav-desc" href="/solution-hw1/index.html">Products</a></p>
           <p> <a class="nav-element" href="/solution-hw1/pcartpage.html">Cart</a></p>
         </nav>
   
@@ -30,37 +30,40 @@
         
         <!--making a div to unify the size of the container in css-->
         <div class="product-details">
+          <div class="description-top">
+            <p>Customize our delicious, hand-made cinammon roll to your liking!</p>
+          </div>
 
-          <p>Customize our delicious, hand-made cinammon roll to your liking!</p>
-        
-        
-          <!--referenced W3Schools page linked in HW1 instructions for how the <select> tag worked-->
-          <!--Glazing drop down-->
-          <label for="glazing">Glazing:</label>
+          <div class="dropdowns-middle">
+            <!--referenced W3Schools page linked in HW1 instructions for how the <select> tag worked-->
+            <!--Glazing drop down-->
+            <label for="glazing">Glazing:</label>
 
-          <select name="glazing" id="glazing">
-            <option value="keep-original">Keep original</option>
-            <option value="sugar-milk">Sugar milk</option>
-            <option value="vanilla-milk">Vanilla milk</option>
-            <option value="double-chocolate">Double chocolate</option>
-          </select> 
-
-          <br>
-
-          <!--Pack size drop down-->
-          <label for="pack-size">Pack size:</label>
-
-          <!--will these eventually be actual numberical values for javascript?-->
-          <select name="pack-size" id="pack-size">
-            <option value="one">1</option>
-            <option value="three">3</option>
-            <option value="six">6</option>
-            <option value="twelve">12</option>
-          </select> 
-
-          <br>
+            <select name="glazing" id="glazing">
+              <option value="keep-original">Keep original</option>
+              <option value="sugar-milk">Sugar milk</option>
+              <option value="vanilla-milk">Vanilla milk</option>
+              <option value="double-chocolate">Double chocolate</option>
+            </select> 
           
-          <div class="price-and-cbutton">
+            <br>
+            <br>
+
+            <!--Pack size drop down-->
+            <label for="pack-size">Pack size:</label>
+
+            <!--will these eventually be actual numberical values for javascript?-->
+            <select name="pack-size" id="pack-size">
+              <option value="one">1</option>
+              <option value="three">3</option>
+              <option value="six">6</option>
+              <option value="twelve">12</option>
+            </select> 
+
+            <br>
+         </div>
+          
+          <div class="price-and-cbutton-end">
             <p>$2.49</p>
             <button id="addcart-button">Add to Cart</button>
           </div>

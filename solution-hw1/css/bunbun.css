@@ -20,23 +20,25 @@ a.nav-element {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
-    /*text-align: center;*/
 }
 
 /* ???????????????????? Trying to align text center ?????????????????? */
-/*.nav-element {
+.nav-element {
     text-align: center;
-}*/
+    font-size: 20px;
+}
 
-/*turns nav link bold and yellow on hover*/
+/*turns nav link bold and yellow on hover
 .nav-element:hover {
     font-weight: bold;
     background-color: yellow;
 }
+Disregard, as I misread the instructions*/
 
 /*unbolds h2*/
 h2 {
     font-weight: 500;
+    font-size: 50px;
 }
 
 /*aligns elements in the center of the page*/
@@ -47,6 +49,12 @@ main {
 }
 
 /* PRODUCT/GALLERY PAGE */
+
+/*makes PRODUCTS in nav menu bold and yellow highlight*/
+#product-nav-home {
+    font-weight: bold;
+    background-color: yellow;
+}
 
 /*sizes product images and adds border*/
 .product-page-image {
@@ -75,6 +83,12 @@ a.pdesc-page-link{
 
 /* PRODUCT DESCRIPTION PAGE */
 
+/*makes PRODUCTS in nav menu bold and yellow highlight*/
+#product-nav-desc {
+    font-weight: bold;
+    background-color: yellow;
+}
+
 /*updates the size of the image and adds border*/
 .product-desc-image {
     width: 600px;
@@ -85,9 +99,17 @@ a.pdesc-page-link{
 /*places instructions in a box for sizing*/
 .product-details {
     width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*space between drop downs and other cnotent*/
+.dropdowns-middle {
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
-/*aligns drop down menu titles to the left???????????????????*/
+/*aligns drop down menu titles to the left?*/
 label {
     float: left;
 }
@@ -101,24 +123,41 @@ select {
 }
 
 /*positioning price and button*/
-.price-and-cbutton{
+.price-and-cbutton-end{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: flex-end; /*How to add space between button and menu???????*/
+    align-items: flex-end;
+    /*align-content: flex-end; /*How to add space between button and menu???????*/
 }
 
 /*changes the add to cart and checkout button styles*/
 #addcart-button, #checkout-button {
     background-color: yellow;
     font-weight: bold;
-    padding: 10px; /*changing left and right, not top and bottom??????*/
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 5px 20px; /*changing left and right, not top and bottom??????*/
 }
 
 /* PRODUCT CART PAGE */
+
+/*makes CART in nav menu bold and yellow highlight*/
+#cart-nav-cart {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/*sizes cart images and adds black border*/
 .cart-image {
     width: 200px;
     height: 200px;
     border: solid black;
 }
 
+.remove-button {
+    font-size: small;
+}
+/*p {
+    font-size: 20px;
+}*/
