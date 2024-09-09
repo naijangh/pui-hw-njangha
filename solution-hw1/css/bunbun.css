@@ -75,12 +75,45 @@ a.pdesc-page-link{
 
 /* PRODUCT DESCRIPTION PAGE */
 
+/*updates the size of the image and adds border*/
 .product-desc-image {
     width: 600px;
     height: 600px;
     border: solid black;
 }
 
+/*places instructions in a box for sizing*/
+.product-details {
+    width: 190px;
+}
+
+/*aligns drop down menu titles to the left???????????????????*/
+label {
+    float: left;
+}
+
+
+/*makes drop down menus the same length 
+by fitting them to the div container 
+(product-details)*/
+select {
+    width: 100%;
+}
+
+/*positioning price and button*/
+.price-and-cbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-end; /*How to add space between button and menu???????*/
+}
+
+/*changes the add to cart and checkout button styles*/
+#addcart-button, #checkout-button {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px; /*changing left and right, not top and bottom??????*/
+}
 
 /* PRODUCT CART PAGE */
 .cart-image {
@@ -88,3 +121,4 @@ a.pdesc-page-link{
     height: 200px;
     border: solid black;
 }
+
