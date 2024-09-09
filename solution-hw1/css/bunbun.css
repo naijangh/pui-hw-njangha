@@ -1,41 +1,77 @@
-/* SHARED PAGE FEATURES */
+/* SHARED PAGE FEATURES 
+(logo, divider line, nav menu, headers, alignment)
+*/
 
+/*sizes logo*/
 .logo {
     width: 400px;
 }
 
+/*refereced stackoverflow here (Gregg B?) to make the dividing line thicker*/
+hr {
+    border: none;
+    height: 3px;
+    color: black;
+    background-color: black;
+}
+
+/*changes nav link to all caps, no underline and black*/
 a.nav-element {
     text-transform: uppercase;
     text-decoration: none;
-    color:black;
+    color: black;
+    /*text-align: center;*/
 }
+
+/* ???????????????????? Trying to align text center ?????????????????? */
+/*.nav-element {
+    text-align: center;
+}*/
+
+/*turns nav link bold and yellow on hover*/
 .nav-element:hover {
     font-weight: bold;
     background-color: yellow;
 }
 
+/*unbolds h2*/
+h2 {
+    font-weight: 500;
+}
 
-/* PRODUCT PAGE */
+/*aligns elements in the center of the page*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+/* PRODUCT/GALLERY PAGE */
+
+/*sizes product images and adds border*/
 .product-page-image {
     width: 400px;
     height: 400px;
     border: solid black;
 }
 
-/*constraints for yellow highlight box*/
-.product-page-setup {
-    width: 410px;
-}
+/*on hover, text turns bold and imaage and text are highlighted*/
 .product-page-setup:hover{
     font-weight: bold;
-    background-color: yellow; /*or border?*/
+    background-color: yellow;
+    padding: 10px; /*how to eliminate the extra yellow under the price?*/
 }
 
-/*
-.central-alignment {
-    align-content: center;
+/*removes underline for price and changes text color to black*/
+a.pdesc-page-link{
+    text-decoration: none;
+    color: black;
 }
-    */
+
+/*adds underline to title*/
+.product-page-title {
+    text-decoration: underline;
+}
 
 /* PRODUCT DESCRIPTION PAGE */
 
