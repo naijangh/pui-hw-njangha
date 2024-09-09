@@ -24,7 +24,7 @@ a.nav-element {
 
 /* ???????????????????? Trying to align text center ?????????????????? */
 .nav-element {
-    text-align: center;
+    text-align: center;  
     font-size: 20px;
 }
 
@@ -103,7 +103,7 @@ a.pdesc-page-link{
     flex-direction: column;
     justify-content: space-around;
 }
-/*space between drop downs and other cnotent*/
+/*space between drop downs and other content*/
 .dropdowns-middle {
     margin-top: 20px;
     margin-bottom: 50px;
@@ -149,6 +149,13 @@ select {
 }
 
 /*sizes cart images and adds black border*/
+
+.shopping-cart-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*why does only one item container respond?*/
+}
+
 .cart-image {
     width: 200px;
     height: 200px;
@@ -157,6 +164,23 @@ select {
 
 .remove-button {
     font-size: small;
+    margin-top: auto;
+    text-align: center;
+}
+
+.item-details {
+    text-align: center;
+    line-height: 0.5;
+    margin-bottom: 50px;
+}
+
+#checkout-line {
+    width: 50%;
+    margin: auto;
+}
+
+.checkout-footer {
+    
 }
 /*p {
     font-size: 20px;
