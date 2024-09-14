@@ -12,25 +12,30 @@
 <body>
 
   <!--This is the header and nav section-->
-  <header>
-    <a href="../solution-hw1"><img class="logo" src="../assets/logo/logo-01.svg" alt="Bakery Logo"></a>
-    <hr class="divider-line"> <!--per html-easy.com, this tag makes a horizantal line in HTML-->
+  <header class="header-container">
+    <div class="logo-container">
+      <a href="../solution-hw1"><img class="logo" src="../assets/logo/logo-01.svg" alt="Bakery Logo"></a>
+    </div>
+
+    <div class="menu-line-pagetitle-container">
+      <nav>
+        <p> <a class="nav-element" id="product-nav-home" href="../solution-hw1/index.html">Products</a></p>
+        <p> <a class="nav-element" href="../solution-hw1/pcartpage.html">Cart</a></p>
+      </nav>
+      
+      <hr class="divider-line"> <!--per html-easy.com, this tag makes a horizantal line in HTML-->
+
+      <br>
+
+      <h2>
+        Our hand-made cinnamon rolls
+      </h2>
+    </div>
   </header>
 
-  <main>
-    <nav>
-      <p> <a class="nav-element" id="product-nav-home" href="../solution-hw1/index.html">Products</a></p>
-      <p> <a class="nav-element" href="../solution-hw1/pcartpage.html">Cart</a></p>
-    </nav>
-
-    <br>
+  <main class="main-container">
 
     <!--This is the photo gallery part of the page-->
-
-    <h2>
-      Our hand-made cinnamon rolls
-    </h2>
-
     <!--Original cinnamon roll-->
     <section class="product-page-setup">
       <a class="pdesc-page-link" href="../solution-hw1/productdesc.html">
@@ -116,8 +121,7 @@
 
     <br>
 
-  </main>
-
+  </main>  
 </body>
 
 </html>

@@ -28,13 +28,6 @@ a.nav-element {
     font-size: 20px;
 }
 
-/*turns nav link bold and yellow on hover
-.nav-element:hover {
-    font-weight: bold;
-    background-color: yellow;
-}
-Disregard, as I misread the instructions*/
-
 /*unbolds h2*/
 h2 {
     font-weight: 500;
@@ -185,3 +178,22 @@ select {
 /*p {
     font-size: 20px;
 }*/
+
+/*FLEXBOX STYLING
+header{
+    display: flex;
+    flex-direction: row;
+
+}*/
+.header-container {
+    background-color: gray;
+}
+.logo-container {
+    background-color: blue;
+}
+.menu-line-pagetitle-container {
+    background-color: red;
+}
+.main-container {
+    background-color: green;
+}
