@@ -51,8 +51,8 @@ main {
 
 /*sizes product images and adds border*/
 .product-page-image {
-    width: 400px;
-    height: 400px;
+    width: 285px;
+    height: 285px;
     border: solid black;
 }
 
@@ -188,7 +188,7 @@ header{
 .header-container {
     /*background-color: gray; */
     display: flex;
-    padding: 50px;
+    padding: 50px, 0px, 50px, 50px;
     /*flex-direction: row;*/
     
 }
@@ -235,5 +235,23 @@ about why flex makes <hr> disappear (due to margin attribute)
 }
 
 .main-container {
-    background-color: green;
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.image-row1 {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image-row2 {
+    background-color: brown;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#walnut-roll {
+    background-color: aliceblue;
 }
