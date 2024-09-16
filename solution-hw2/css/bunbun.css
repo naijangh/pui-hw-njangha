@@ -271,26 +271,43 @@ keeps the dividing line visible within the container
 
 /* makes each cart item element in a row */
 .item-in-cart {
-    background-color: bisque;
     display: flex;
     flex-direction: row;
 }
 
 /*extends container all the way to the right without infringing upon price-container and gives space between text start and image on the left*/
 .item-details {
-    background-color: blanchedalmond;
     flex-grow: 1;
     margin-left: 5%;
 }
 
-/*establishes a set width for the price container and makes sure item-details doesn't encroach (using flex-shrink)*/
+/*establishes a set width for the price container and makes sure item-details doesn't encroach (using flex-shrink), moves price down using padding to better replicate the example assignment images*/
 .price-container {
-    background-color: lime;
     margin-left: auto;
     width: 100px;
     flex-shrink: 0;
+    padding: 40px 0px 0px 0px;
 }
 
+/*turns container holding "total", price, and checkout button into flex*/
 .total-checkout-container {
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+}
+
+/*aligns total price and checkout button to right of screen and keeps the sizing static*/
+.checkout-footer-price-button {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+/*aligns final total to the right of the container*/
+#total-price {
+    text-align: right;
+}
+
+/*expands the size of the "total" container to meet the other container and aligns "total" center to the box*/
+.checkout-footer-total {
+    flex-grow: 1;
+    text-align: center;
 }
