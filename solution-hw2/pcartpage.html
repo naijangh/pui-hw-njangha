@@ -37,7 +37,7 @@
     </header>
 
 
-    <main>      
+    <main class="cart-page-container">      
       <!--container for organizing shopping cart items-->
       <div class="shopping-cart-structure">
         <!--making this an object or class? that always has an image, remove button, title, glazing, pack size, price, etc?)-->
@@ -45,16 +45,22 @@
         <!--container for item 1 in shopping cart (div or section?)-->
         <div class="item-in-cart">
 
-          <img class="cart-image" src="../assets/products/original-cinnamon-roll.jpg" alt="image of original cinnamon roll">
+          <div class="image-and-remove-container">
+            <img class="cart-image" src="../assets/products/original-cinnamon-roll.jpg" alt="image of original cinnamon roll">
 
-          <p class="remove-button">Remove</p> <!--should 'remove' be a button once it is functional?-->
+            <p class="remove-button">Remove</p> <!--should 'remove' be a button once it is functional?-->
+          </div>
 
           <div class="item-details">
             <p>Original Cinnamon Roll</p>
             <p>Glazing: Keep original</p>
             <p>Pack Size: 1</p>
+          </div>
+
+          <div class="price-container">
             <p>$2.49</p>
           </div>
+
         </div>
 
         <br>
@@ -62,26 +68,34 @@
         <!--container for item 2 in shopping cart-->
         <div class="item-in-cart">
 
-          <img class="cart-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="image of double chocolate cinnamon roll">
+          <div class="image-and-remove-container">
+            <img class="cart-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="image of double chocolate cinnamon roll">
 
-          <p class="remove-button">Remove</p> <!--should 'remove' be a button once it is functional?-->
+            <p class="remove-button">Remove</p> <!--should 'remove' be a button once it is functional?-->
+          </div>
 
           <div class="item-details">
             <p>Double Chocolate Cinnamon Roll</p>
             <p>Glazing: Sugar milk</p>
             <p>Pack Size: 6</p>
-            <p>$27.45</p>
           </div>
+
+          <div class="price-container">
+            <p>$27.45</p>
         </div>
 
       </div>
      
-      
       <hr id="checkout-line">
-
-      <div class="checkout-footer">
-        <p>Total: $29.94</p>
-        <button id="checkout-button">Checkout</button>
+    
+      <div class="total-checkout-container">
+        <div class="checkout-footer-total">
+          <p>Total</p>
+        </div>
+        <div class="checkout-footer-price-button">
+          <p>$29.94</p>
+          <button id="checkout-button">Checkout</button>
+        </div>
       </div>
     </main>
     

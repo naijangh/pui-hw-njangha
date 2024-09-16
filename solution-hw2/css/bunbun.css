@@ -91,8 +91,10 @@ a.pdesc-page-link{
 
 /*places instructions in a box for sizing*/
 .product-details {
-    width: 190px;
+    width: 275px;
+    height: 600px;
     display: flex;
+    padding: 0px 20px;
     flex-direction: column;
     justify-content: space-around;
 }
@@ -142,12 +144,12 @@ select {
 }
 
 /*sizes cart images and adds black border*/
-
+/*
 .shopping-cart-structure {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /*why does only one item container respond?*/
-}
+    align-items: flex-start; /*why does only one item container respond?
+}*/
 
 .cart-image {
     width: 200px;
@@ -156,102 +158,139 @@ select {
 }
 
 .remove-button {
-    font-size: small;
+    font-weight: bold;
+    text-decoration: underline;
     margin-top: auto;
-    text-align: center;
+    text-align: left;
 }
 
 .item-details {
-    text-align: center;
-    line-height: 0.5;
-    margin-bottom: 50px;
+    text-align: left;
+    /*line-height: 0.5;*/
+}
+
+.price-container {
+    text-align: right;
 }
 
 #checkout-line {
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
-.checkout-footer {
-    
-}
-/*p {
-    font-size: 20px;
-}*/
+/*FLEXBOX STYLING*/
 
-/*FLEXBOX STYLING
-header{
-    display: flex;
-    flex-direction: row;
-
-}*/
+/*styling the header section of each page*/
+/*styling the container that holds the logo, nav menu, divider line, and page title*/
 .header-container {
-    /*background-color: gray; */
     display: flex;
-    padding: 50px, 0px, 50px, 50px;
-    /*flex-direction: row;*/
-    
+    padding: 50px, 0px, 50px, 50px;    
 }
+
+/*sets the width of the logo and ensures the size does not change when screen is resized*/
 .logo-container {
-    /*background-color: blue;*/
     width: 420px;
     flex-shrink: 0;
 }
+
+/*has the rest of the header fill in the space not filled by the logo, and orders the elements into a column*/
 .menu-line-pagetitle-container {
-    /*background-color: red;*/
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
+/*moves the products and cart page buttons to the left of its container*/
 nav{
-    /*background-color: bisque;*/
     display: flex;
     margin-left: auto;
     flex-direction: row;
 }
 
-/*.products-nav, .cart-nav {
-    justify-content: flex-end;
-}*/
-
+/*uses padding to create spacing between the elements*/
 .products-nav {
-    /*background-color: green;*/
     padding: 10px 100px;
     justify-content: flex-start;
 }
 
 .cart-nav {
-    /*background-color: blueviolet;*/
     padding: 10px 100px;
 }
+
 /*Referenced Craig Scott on stackoverflow.com to learn 
-about why flex makes <hr> disappear (due to margin attribute) 
+about why flex makes <hr> disappear (due to margin attribute)
+keeps the dividing line visible within the container
 */
 .divider-line { 
     margin-left: 0;
     margin-right: 0;
 }
 
+/*styling the main section of the product gallery page*/
 .main-container {
-    /*background-color: green;*/
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     padding: 50px;
 }
+
 .image-row1 {
-    background-color: blue;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
+
+.product-page-setup {
+    margin: 50px;
+}
+
 .image-row2 {
-    background-color: brown;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
-#walnut-roll {
-    background-color: aliceblue;
+
+/*styling the main section of the product description page*/
+
+.product-desc-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*styling the main section of the cart page */
+
+/*establishing container size and flexbox features of main cart elements*/
+.cart-page-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 75%;
+    height: 75%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* makes each cart item element in a row */
+.item-in-cart {
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+}
+
+/*extends container all the way to the right without infringing upon price-container and gives space between text start and image on the left*/
+.item-details {
+    background-color: blanchedalmond;
+    flex-grow: 1;
+    margin-left: 5%;
+}
+
+/*establishes a set width for the price container and makes sure item-details doesn't encroach (using flex-shrink)*/
+.price-container {
+    background-color: lime;
+    margin-left: auto;
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.total-checkout-container {
+    background-color: aqua;
 }
