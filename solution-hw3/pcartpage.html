@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../solution-hw3/css/bunbun.css"/>
+    <title>Bun Bun Bake Shop</title>
+  </head>
+
+  <!--PRODUCT PAGE-->
+
+  <body>
+
+    <header class="header-container">
+      <div class="logo-container">
+        <a href="../solution-hw3/index.html"><img class="logo" src="../assets/logo/logo-01.svg" alt="Bakery Logo"></a>
+      </div>
+  
+      <div class="menu-line-pagetitle-container">
+        <nav>
+          <div class="products-nav">
+            <p> <a class="nav-element" href="../solution-hw3/index.html">Products</a></p>
+          </div>
+          <div class="cart-nav">
+            <p> <a class="nav-element" id="cart-nav-cart" href="../solution-hw3/pcartpage.html">Cart</a></p>
+          </div>
+        </nav>
+        
+        <hr class="divider-line"> <!--per html-easy.com, this tag makes a horizantal line in HTML-->
+  
+        <br>
+  
+        <h2>
+          Our hand-made cinnamon rolls
+        </h2>
+      </div>
+    </header>
+
+
+    <main class="cart-page-container">      
+      <!--container for organizing shopping cart items-->
+      <div class="shopping-cart-structure">
+        <!--making this an object or class? that always has an image, remove button, title, glazing, pack size, price, etc?)-->
+
+        <!--container for item 1 in shopping cart (div or section?)-->
+        <div class="item-in-cart">
+
+          <div class="image-and-remove-container">
+            <img class="cart-image" src="../assets/products/original-cinnamon-roll.jpg" alt="image of original cinnamon roll">
+
+            <p class="remove-button">Remove</p> <!--should 'remove' be a button once it is functional?-->
+          </div>
+
+          <div class="item-details">
+            <p>Original Cinnamon Roll</p>
+            <p>Glazing: Keep original</p>
+            <p>Pack Size: 1</p>
+          </div>
+
+          <div class="price-container">
+            <p>$2.49</p>
+          </div>
+
+        </div>
+
+        <br>
+
+        <!--container for item 2 in shopping cart-->
+        <div class="item-in-cart">
+
+          <div class="image-and-remove-container">
+            <img class="cart-image" src="../assets/products/double-chocolate-cinnamon-roll.jpg" alt="image of double chocolate cinnamon roll">
+
+            <p class="remove-button">Remove</p> <!--should 'remove' be a button once it is functional?-->
+          </div>
+
+          <div class="item-details">
+            <p>Double Chocolate Cinnamon Roll</p>
+            <p>Glazing: Sugar milk</p>
+            <p>Pack Size: 6</p>
+          </div>
+
+          <div class="price-container">
+            <p>$27.45</p>
+        </div>
+
+      </div>
+     
+      <hr id="checkout-line">
+    
+      <div class="total-checkout-container">
+        <div class="checkout-footer-total">
+          <p>Total</p>
+        </div>
+        <div class="checkout-footer-price-button">
+          <p id="total-price">$29.94</p>
+          <button id="checkout-button">Checkout</button>
+        </div>
+      </div>
+    </main>
+    
+  </body>
+
+</html>

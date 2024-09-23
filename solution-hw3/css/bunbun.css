@@ -1,0 +1,317 @@
+/* SHARED PAGE FEATURES 
+(logo, divider line, nav menu, headers, alignment)
+*/
+
+/*changes font to sans-serif*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*sizes logo*/
+.logo {
+    width: 400px;
+}
+
+/*refereced stackoverflow here (Gregg B?) to make the dividing line thicker*/
+hr {
+    border: none;
+    height: 3px;
+    color: black;
+    background-color: black;
+}
+
+/*changes nav link to all caps, no underline and black*/
+a.nav-element {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+/* ???????????????????? Trying to align text center ?????????????????? */
+.nav-element {
+    text-align: center;  
+    font-size: 30px;
+}
+
+/*unbolds h2*/
+h2 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+/*aligns elements in the center of the page*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+/* PRODUCT/GALLERY PAGE */
+
+/*makes PRODUCTS in nav menu bold and yellow highlight*/
+#product-nav-home {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/*sizes product images and adds border*/
+.product-page-image {
+    width: 285px;
+    height: 285px;
+    border: solid black;
+}
+
+/*on hover, text turns bold and imaage and text are highlighted*/
+.product-page-setup:hover{
+    font-weight: bold;
+    background-color: yellow;
+    padding: 10px; /*how to eliminate the extra yellow under the price?*/
+}
+
+/*removes underline for price and changes text color to black*/
+a.pdesc-page-link{
+    text-decoration: none;
+    color: black;
+}
+
+/*adds underline to title*/
+.product-page-title {
+    text-decoration: underline;
+}
+
+/* PRODUCT DESCRIPTION PAGE */
+
+/*makes PRODUCTS in nav menu bold and yellow highlight*/
+#product-nav-desc {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/*updates the size of the image and adds border*/
+.product-desc-image {
+    width: 600px;
+    height: 600px;
+    border: solid black;
+}
+
+/*places instructions in a box for sizing*/
+.product-details {
+    width: 275px;
+    height: 600px;
+    display: flex;
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*space between drop downs and other content*/
+.dropdowns-middle {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/*aligns drop down menu titles to the left?*/
+label {
+    float: left;
+}
+
+
+/*makes drop down menus the same length 
+by fitting them to the div container 
+(product-details)*/
+select {
+    width: 100%;
+}
+
+/*positioning price and button*/
+.price-and-cbutton-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    /*align-content: flex-end; /*How to add space between button and menu???????*/
+}
+
+/*changes the add to cart and checkout button styles*/
+#addcart-button, #checkout-button {
+    background-color: yellow;
+    font-weight: bold;
+    margin-bottom: auto;
+    margin-top: auto;
+    padding: 5px 20px; /*changing left and right, not top and bottom??????*/
+}
+
+/* PRODUCT CART PAGE */
+
+/*makes CART in nav menu bold and yellow highlight*/
+#cart-nav-cart {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/*sizes cart images and adds black border*/
+/*
+.shopping-cart-structure {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /*why does only one item container respond?
+}*/
+
+.cart-image {
+    width: 200px;
+    height: 200px;
+    border: solid black;
+}
+
+.remove-button {
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: auto;
+    text-align: left;
+}
+
+.item-details {
+    text-align: left;
+    /*line-height: 0.5;*/
+}
+
+.price-container {
+    text-align: right;
+}
+
+#checkout-line {
+    width: 100%;
+    margin: auto;
+}
+
+/*FLEXBOX STYLING*/
+
+/*styling the header section of each page*/
+/*styling the container that holds the logo, nav menu, divider line, and page title*/
+.header-container {
+    display: flex;
+    padding: 50px, 0px, 50px, 50px;    
+}
+
+/*sets the width of the logo and ensures the size does not change when screen is resized*/
+.logo-container {
+    width: 420px;
+    flex-shrink: 0;
+}
+
+/*has the rest of the header fill in the space not filled by the logo, and orders the elements into a column*/
+.menu-line-pagetitle-container {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*moves the products and cart page buttons to the left of its container*/
+nav{
+    display: flex;
+    margin-left: auto;
+    flex-direction: row;
+}
+
+/*uses padding to create spacing between the elements*/
+.products-nav {
+    padding: 10px;
+    justify-content: flex-start;
+}
+
+.cart-nav {
+    padding: 10px 100px;
+}
+
+/*Referenced Craig Scott on stackoverflow.com to learn 
+about why flex makes <hr> disappear (due to margin attribute)
+keeps the dividing line visible within the container
+*/
+.divider-line { 
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*styling the main section of the product gallery page*/
+.main-container {
+    display: flex;
+    flex-direction: column; 
+    padding: 50px;
+}
+
+.image-row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-page-setup {
+    margin: 50px;
+}
+
+.image-row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+/*styling the main section of the product description page*/
+
+.product-desc-page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*styling the main section of the cart page */
+
+/*establishing container size and flexbox features of main cart elements*/
+.cart-page-container {
+    display: flex;
+    box-sizing: border-box;
+    width: 75%;
+    height: 75%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* makes each cart item element in a row */
+.item-in-cart {
+    display: flex;
+    flex-direction: row;
+}
+
+/*extends container all the way to the right without infringing upon price-container and gives space between text start and image on the left*/
+.item-details {
+    flex-grow: 1;
+    margin-left: 5%;
+}
+
+/*establishes a set width for the price container and makes sure item-details doesn't encroach (using flex-shrink), moves price down using padding to better replicate the example assignment images*/
+.price-container {
+    margin-left: auto;
+    width: 100px;
+    flex-shrink: 0;
+    padding: 40px 0px 0px 0px;
+}
+
+/*turns container holding "total", price, and checkout button into flex*/
+.total-checkout-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/*aligns total price and checkout button to right of screen and keeps the sizing static*/
+.checkout-footer-price-button {
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+/*aligns final total to the right of the container*/
+#total-price {
+    text-align: right;
+}
+
+/*expands the size of the "total" container to meet the other container and aligns "total" center to the box*/
+.checkout-footer-total {
+    flex-grow: 1;
+    text-align: center;
+}
