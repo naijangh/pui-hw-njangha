@@ -1,7 +1,6 @@
 //using code format of example on github, linked in hw 3 instruction doc
 
 //create price variables 
-const basePrice = 2.49;
 let price = document.getElementById("product-page-price");
 newPrice = parseFloat(price.textContent);
 
@@ -38,21 +37,20 @@ for (let i = 0; i < glazingOptions.length; i++) {
 
 //calculates glaze prices and updates on website
 function updateGlazePrice() {
-    currentOption = glazingSelect.value;
-    console.log(currentOption);
-    if (currentOption === glazingOptions[0].glaze) {
-        newPrice = basePrice;
-        price.innerText = newPrice;
-        price.innerText = newPrice;
-    } else if (currentOption === glazingOptions[1].glaze) {
-        newPrice = basePrice;
-        price.innerText = newPrice;
-    } else if (currentOption === glazingOptions[2].glaze) {
-        newPrice = basePrice + .5;
-        price.innerText = newPrice;
-    } else if (currentOption === glazingOptions[3].glaze) {
-        newPrice = basePrice + 1.5;
-        price.innerText = newPrice;
+    let glazePrice = newPrice;
+    let currentGlazeOption = glazingSelect.value;
+    if (currentGlazeOption === glazingOptions[0].glaze) {
+        glazePrice = newPrice;
+        price.innerText = glazePrice;
+    } else if (currentGlazeOption === glazingOptions[1].glaze) {
+        glazePrice = newPrice;
+        price.innerText = glazePrice;
+    } else if (currentGlazeOption === glazingOptions[2].glaze) {
+        glazePrice = newPrice + .5;
+        price.innerText = glazePrice;
+    } else if (currentGlazeOption === glazingOptions[3].glaze) {
+        glazePrice = newPrice + 1.5;
+        price.innerText = glazePrice;
     }
 
 };
@@ -63,19 +61,19 @@ glazingSelect.addEventListener('change', updateGlazePrice);
 //array of pack size option objects
 const packSizeOptions = [
     {
-        packSize: "1",
+        packSize: 1,
         price: 1,
     },
     {
-        packSize: "3",
+        packSize: 3,
         price: 3,
     },
     {
-        packSize: "6",
+        packSize: 6,
         price: 5,
     },
     {
-        packSize: "12",
+        packSize: 12,
         price: 10,
     },
 ];
@@ -91,8 +89,22 @@ for (let i = 0; i < packSizeOptions.length; i++) {
 }
 
 //calculates pack size prices and updates on website
-function updateSizePrice {
-
+function updateSizePrice() {
+    let currentPackOption = parseFloat(packSizeSelect.value);
+    let packPrice = newPrice;
+    if (currentPackOption === packSizeOptions[0].packSize) {
+        packPrice = newPrice * 1 
+        price.innerText = packPrice.toFixed(2);
+    } else if (currentPackOption === packSizeOptions[1].packSize) {
+        packPrice = newPrice * 3; 
+        price.innerText = packPrice.toFixed(2);
+    } else if (currentPackOption === packSizeOptions[2].packSize) {
+        packPrice = newPrice * 5; 
+        price.innerText = packPrice.toFixed(2);
+    } else if (currentPackOption === packSizeOptions[3].packSize) {
+        packPrice = newPrice * 10; 
+        price.innerText = packPrice.toFixed(2);
+    }
 };
 
 //tells function to run when change is made to drop down
