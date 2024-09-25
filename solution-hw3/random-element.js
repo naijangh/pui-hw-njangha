@@ -1,5 +1,10 @@
 //using code format of example on github, linked in hw 3 instruction doc
 
+//create price variables 
+const basePrice = 2.49;
+let price = document.getElementById("product-page-price");
+newPrice = parseFloat(price.textContent);
+
 //array of glaze option objects
 const glazingOptions = [
     {
@@ -31,6 +36,30 @@ for (let i = 0; i < glazingOptions.length; i++) {
     glazingSelect.appendChild(glazeDropDownOpt);
 }
 
+//calculates glaze prices and updates on website
+function updateGlazePrice() {
+    currentOption = glazingSelect.value;
+    console.log(currentOption);
+    if (currentOption === glazingOptions[0].glaze) {
+        newPrice = basePrice;
+        price.innerText = newPrice;
+        price.innerText = newPrice;
+    } else if (currentOption === glazingOptions[1].glaze) {
+        newPrice = basePrice;
+        price.innerText = newPrice;
+    } else if (currentOption === glazingOptions[2].glaze) {
+        newPrice = basePrice + .5;
+        price.innerText = newPrice;
+    } else if (currentOption === glazingOptions[3].glaze) {
+        newPrice = basePrice + 1.5;
+        price.innerText = newPrice;
+    }
+
+};
+
+//tells function to run when change is made to drop down
+glazingSelect.addEventListener('change', updateGlazePrice);
+
 //array of pack size option objects
 const packSizeOptions = [
     {
@@ -61,9 +90,12 @@ for (let i = 0; i < packSizeOptions.length; i++) {
     packSizeSelect.appendChild(sizeDropDownOpt);
 }
 
+//calculates pack size prices and updates on website
+function updateSizePrice {
 
-const basePrice = 2.49;
+};
+
+//tells function to run when change is made to drop down
+packSizeSelect.addEventListener('change', updateSizePrice);
 
 
-
-//needs to get input from drop down menu, calculate the price, and update it visually 
