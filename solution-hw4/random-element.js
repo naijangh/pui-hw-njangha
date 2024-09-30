@@ -169,14 +169,10 @@ const AddToCartButton = document.getElementById("addcart-button");
 AddToCartButton.addEventListener('click', updateCart);
 
 function updateCart() {
-    //let cartedRoll = new Roll (rollType, glazingSelect.value, packSizeSelect.value, newPrice);
-    let cartedRoll = new Roll();
-    Roll.type = rollType;
-    Roll.glazing = glazingSelect.value;
-    Roll.size = packSizeSelect.value;
-    Roll.basePrice = newPrice;
-    cart.push(Roll);
+    let cartedRoll = new Roll (rollType, glazingSelect.value, packSizeSelect.value, newPrice);
+    cart.push(cartedRoll);
     console.log(cart);
 }
 
 
+//rolls["rollType"].basePrice;
