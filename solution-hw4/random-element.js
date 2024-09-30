@@ -173,6 +173,3 @@ function updateCart() {
     cart.push(cartedRoll);
     console.log(cart);
 }
-
-
-//rolls["rollType"].basePrice;
