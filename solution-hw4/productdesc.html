@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../solution-hw3/css/bunbun.css"/>
+    <script defer src="../solution-hw3/random-element.js"></script> 
+    <script src="../rollsData.js"></script>
+    <title>Bun Bun Bake Shop</title>
+</head>
+<!--PRODUCT DESCRIPTION PAGE-->
+
+  <body>
+    <header class="header-container">
+      <div class="logo-container">
+        <a href="../solution-hw3/index.html"><img class="logo" src="../assets/logo/logo-01.svg" alt="Bakery Logo"></a>
+      </div>
+  
+      <div class="menu-line-pagetitle-container">
+        <nav>
+          <div class="products-nav">
+            <p> <a class="nav-element" id="product-nav-desc" href="../solution-hw3/index.html">Products</a></p>
+          </div>
+          <div class="cart-nav">
+            <p> <a class="nav-element" href="../solution-hw3/pcartpage.html">Cart</a></p>
+          </div>
+        </nav>
+        
+        <hr class="divider-line"> <!--per html-easy.com, this tag makes a horizantal line in HTML-->
+  
+        <br>
+  
+        <h2 class="desc-page-title">
+          <!--Original cinnamon roll-->
+        </h2>
+      </div>
+    </header>
+
+  
+    <main class="product-desc-page-container">
+      
+        <div class="product-desc-image-container">
+          <img class="product-desc-image">
+        </div>
+
+        <!--making a div to unify the size of the container in css-->
+        <div class="product-details">
+          <div class="description-top">
+            <p>Customize our delicious, hand-made cinammon roll to your liking!</p>
+          </div>
+
+          <div class="dropdowns-middle">
+            <!--referenced W3Schools page linked in HW1 instructions for how the <select> tag worked-->
+            <!--Glazing drop down-->
+            <label for="glazing">Glazing:</label>
+
+            <!--<select name="glazing" id="glazing">
+              <option value="keep-original">Keep original</option>
+              <option value="sugar-milk">Sugar milk</option>
+              <option value="vanilla-milk">Vanilla milk</option>
+              <option value="double-chocolate">Double chocolate</option>
+            </select> -->
+
+            <select name="glazing" id="glazing-select">
+              <!--<option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>-->
+            </select> 
+          
+            <br>
+            <br>
+
+            <!--Pack size drop down-->
+            <label for="pack-size">Pack size:</label>
+
+            <!--will these eventually be actual numberical values for javascript?
+            <select name="pack-size" id="pack-size">
+              <option value="one">1</option>
+              <option value="three">3</option>
+              <option value="six">6</option>
+              <option value="twelve">12</option>
+            </select>
+            --> 
+            
+            <select name="pack-size" id="pack-size-select">
+             <!-- <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option> -->
+            </select>
+
+            <br>
+         </div>
+          
+          <div class="price-and-cbutton-end">
+            <p>$<span id="product-page-price">2.49</span></p>
+            <button id="addcart-button">Add to Cart</button>
+          </div>
+
+        </div>
+    </main>
+
+  </body>
+  </html>
