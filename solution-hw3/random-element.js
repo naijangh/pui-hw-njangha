@@ -1,51 +1,8 @@
 //using code format of example on github, linked in hw 3 instruction doc
 
-//empty cart array
-let cart = [];
-
-//from hw to get roll type from URL
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-const rollType = params.get('roll');
-
-//update page header
-const descTitle = document.querySelector(".desc-page-title");
-descTitle.innerText = rollType + " cinnamon roll";
-
-//update base price
-//const descBasePrice = document.getElementById("product-page-price");
-//descBasePrice.innerText = .basePrice;
-
-//update image
-const descImage = document.querySelector(".product-desc-image");
-descImage.src = "../assets/products/" + rollType + "-cinnamon-roll.jpg";
-descImage.alt = "image of " + rollType + " cinnamon roll"
-
-/*if (rollType === "Double-Chocolate") {
-    price = rolls.Double-Chocolate.basePrice;
-}*/
-
-
-//UPDATE PRICE
 //create price variables 
 let price = document.getElementById("product-page-price");
-
-let newPrice;
-if (rollType === "Original") {
-    newPrice = rolls.Original.basePrice;
-} else if (rollType === "Apple") {
-    newPrice = rolls.Apple.basePrice;
-} else if (rollType === "Raisin") {
-    newPrice = rolls.Raisin.basePrice;
-} else if (rollType === "Walnut") {
-    newPrice = rolls.Walnut.basePrice;
-} else if (rollType === "Double-chocolate") {
-    newPrice = rolls['Double-Chocolate']['basePrice'];
-} else if (rollType === "Strawberry") {
-    newPrice = rolls.Strawberry.basePrice;
-}
-
-price.innerText = newPrice;
+newPrice = parseFloat(price.textContent);
 
 //array of glaze option objects
 const glazingOptions = [
@@ -136,16 +93,16 @@ function updateSizePrice() {
     let currentPackOption = parseFloat(packSizeSelect.value);
     let packPrice = newPrice;
     if (currentPackOption === packSizeOptions[0].packSize) {
-        packPrice = newPrice * 1
+        packPrice = newPrice * 1 
         price.innerText = packPrice.toFixed(2);
     } else if (currentPackOption === packSizeOptions[1].packSize) {
-        packPrice = newPrice * 3;
+        packPrice = newPrice * 3; 
         price.innerText = packPrice.toFixed(2);
     } else if (currentPackOption === packSizeOptions[2].packSize) {
-        packPrice = newPrice * 5;
+        packPrice = newPrice * 5; 
         price.innerText = packPrice.toFixed(2);
     } else if (currentPackOption === packSizeOptions[3].packSize) {
-        packPrice = newPrice * 10;
+        packPrice = newPrice * 10; 
         price.innerText = packPrice.toFixed(2);
     }
 };
@@ -154,29 +111,41 @@ function updateSizePrice() {
 packSizeSelect.addEventListener('change', updateSizePrice);
 
 
+//empty cart array
+let cart = [];
+
+//from hw to get roll type from URL
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get('roll');
+
+//update page header
+const descTitle = document.querySelector(".desc-page-title");
+descTitle.innerText = rollType + " cinnamon roll";
+
+//update base price
+//const descBasePrice = document.getElementById("product-page-price");
+//descBasePrice.innerText = .basePrice;
+
+//update image: HOW TO USE JSON THO?
+const descImage = document.querySelector(".product-desc-image");
+descImage.src = "../assets/products/" + rollType + "-cinnamon-roll.jpg";
+descImage.alt = "image of " + rollType + " cinnamon roll"
+
+/*if (rollType === "Double-Chocolate") {
+    price = rolls.Double-Chocolate.basePrice;
+}*/
+//UPDATE PRICE
+
+
 //Print cart array (featuring code from hw instructions)
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
         this.type = rollType;
-        this.glazing = rollGlazing;
+        this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
     }
 }
-
-const AddToCartButton = document.getElementById("addcart-button");
-
-AddToCartButton.addEventListener('click', updateCart);
-
-function updateCart() {
-    //let cartedRoll = new Roll (rollType, glazingSelect.value, packSizeSelect.value, newPrice);
-    let cartedRoll = new Roll();
-    Roll.type = rollType;
-    Roll.glazing = glazingSelect.value;
-    Roll.size = packSizeSelect.value;
-    Roll.basePrice = newPrice;
-    cart.push(Roll);
-    console.log(cart);
-}
-
-
+cart.push(Roll);
+console.log(cart);
