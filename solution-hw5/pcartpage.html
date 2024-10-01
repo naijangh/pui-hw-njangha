@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../solution-hw5/css/bunbun.css" />
+  <script src="../rollsData.js"></script>
+  <script defer src="../solution-hw5/cartjs.js"></script>
+  <title>Bun Bun Bake Shop</title>
+</head>
+
+<!--PRODUCT PAGE-->
+
+<body>
+
+  <header class="header-container">
+    <div class="logo-container">
+      <a href="../solution-hw5/index.html"><img class="logo" src="../assets/logo/logo-01.svg" alt="Bakery Logo"></a>
+    </div>
+
+    <div class="menu-line-pagetitle-container">
+      <nav>
+        <div class="products-nav">
+          <p> <a class="nav-element" href="../solution-hw5/index.html">Products</a></p>
+        </div>
+        <div class="cart-nav">
+          <p> <a class="nav-element" id="cart-nav-cart" href="../solution-hw5/pcartpage.html">Cart</a></p>
+        </div>
+      </nav>
+
+      <hr class="divider-line"> <!--per html-easy.com, this tag makes a horizantal line in HTML-->
+
+      <br>
+
+      <h2>
+        Our hand-made cinnamon rolls
+      </h2>
+    </div>
+  </header>
+
+
+  <main class="cart-page-container">
+    <template id="cart-template">
+      <!--container for organizing shopping cart items-->
+      <div class="shopping-cart-structure">
+        <!--making this an object or class? that always has an image, remove button, title, glazing, pack size, price, etc?)-->
+
+        <!--container for item in shopping cart-->
+        <div class="item-in-cart">
+
+          <div class="image-and-remove-container">
+            <img class="cart-image">
+
+            <p class="remove-button"><!--Remove--></p>
+          </div>
+
+          <div class="item-details">
+            <p class = "cart-item-title"></p>
+            <p class = "cart-item-glazing"></p>
+            <p class="cart-item-size"></p>
+          </div>
+
+          <div class="price-container">
+            <p></p>
+          </div>
+        <br>
+      </div>
+    </template>
+
+
+    <hr id="checkout-line">
+
+    <div class="total-checkout-container">
+      <div class="checkout-footer-total">
+        <p>Total</p>
+      </div>
+      <div class="checkout-footer-price-button">
+        <p id="total-price">$29.94</p>
+        <button id="checkout-button">Checkout</button>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
