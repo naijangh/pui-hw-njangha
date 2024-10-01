@@ -173,3 +173,6 @@ function updateCart() {
     cart.push(cartedRoll);
     console.log(cart);
 }
+
+
+//put if then into calculatePrice function
