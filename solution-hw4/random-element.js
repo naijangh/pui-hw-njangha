@@ -17,7 +17,7 @@ descTitle.innerText = rollType + " cinnamon roll";
 
 //update image
 const descImage = document.querySelector(".product-desc-image");
-descImage.src = "../assets/products/" + rollType + "-cinnamon-roll.jpg";
+descImage.src = "../assets/products/" + rollType.toLowerCase() + "-cinnamon-roll.jpg";
 descImage.alt = "image of " + rollType + " cinnamon roll"
 
 /*if (rollType === "Double-Chocolate") {
