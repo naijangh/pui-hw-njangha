@@ -1,5 +1,4 @@
 //using code format of example on github, linked in hw 3 instruction doc
-
 //empty cart array
 let cart = [];
 
