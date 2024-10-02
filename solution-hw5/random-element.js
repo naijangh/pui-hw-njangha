@@ -179,4 +179,4 @@ function updateCart() {
 
 
 
-const cartSet = new Set(); 
+//const cartSet = new Set(); 
