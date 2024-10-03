@@ -1,3 +1,5 @@
+//references lab 5 example
+
 //creating an array to represent the cart
 const cartArr = [];
 
@@ -11,12 +13,17 @@ class Roll {
     }
 }
 
+//update total price displayed (within addNewRoll function)
+let totalDisplayed = document.getElementById("total-price");
+let totalPrice = 0;
+
 //creating a function to create new rolls and add to cart set with updated price
 function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
     const newRoll = new Roll(rollType, rollGlazing, packSize, basePrice);
     calcRollPrice(newRoll);
     cartArr.push(newRoll);
-   // return newRoll;
+    totalPrice = totalPrice + parseFloat(newRoll.basePrice);
+    totalDisplayed.innerText = "$" + totalPrice.toFixed(2);
 }
 
 //takes Roll object as a parameter to calculate price
@@ -75,6 +82,7 @@ function createElement(newRoll) {
     updateElement(newRoll);
 }
 
+
 //takes roll and updates correct DOM element
 function updateElement(newRoll) {
     //creates variables for elements
@@ -93,7 +101,10 @@ function updateElement(newRoll) {
    rollRemoveElement.innerText = "Remove";
 }
 
+//removes roll from cart and updates total price accordingly
 function deleteRoll(newRoll) {
     newRoll.element.remove();
     cartArr.pop(newRoll);
+    totalPrice = totalPrice - parseFloat(newRoll.basePrice);
+    totalDisplayed.innerText = "$" + totalPrice.toFixed(2);
 }

@@ -137,6 +137,7 @@ select {
     margin-bottom: auto;
     margin-top: auto;
     padding: 5px 20px; /*changing left and right, not top and bottom??????*/
+    
 }
 
 /* PRODUCT CART PAGE */
@@ -297,17 +298,21 @@ keeps the dividing line visible within the container
 .total-checkout-container {
     display: flex;
     flex-direction: row;
+    width: 400px;
+    margin-left: auto;
 }
 
 /*aligns total price and checkout button to right of screen and keeps the sizing static*/
 .checkout-footer-price-button {
     margin-left: auto;
+    padding: 0px 60px;
     flex-shrink: 0;
 }
 
 /*aligns final total to the right of the container*/
 #total-price {
     text-align: right;
+    margin-right: auto;
 }
 
 /*expands the size of the "total" container to meet the other container and aligns "total" center to the box*/
