@@ -65,7 +65,7 @@ addNewRoll("Apple", "Original", 3, 3.49);
 for (const newRoll of cartArr) {
     console.log(newRoll);
     createElement(newRoll);
-} 
+}
 
 //function to create a DOM element for object
 function createElement(newRoll) {
@@ -73,7 +73,7 @@ function createElement(newRoll) {
     const clone = cartTemplate.content.cloneNode(true); //get the content in the template and copy using cloneNode. True means we want a deep copy
     newRoll.element = clone.querySelector(".item-in-cart"); //storing a reference to newly copied element (if printed, this will show new html nodes within .item-in-cart)
     const btnRemove = newRoll.element.querySelector(".remove-button"); //grabs remove html
-    btnRemove.addEventListener('click', () => { 
+    btnRemove.addEventListener('click', () => {
         deleteRoll(newRoll);
     }); //attaches delete function to button click
     const cartListElement = document.querySelector(".cart-page-container"); //reference to div that will contain cart items
@@ -94,11 +94,11 @@ function updateElement(newRoll) {
     const rollPriceElement = newRoll.element.querySelector(".price-container");
     //updates DOM elements
     rollImageElement.src = "../assets/products/" + newRoll.type.toLowerCase() + "-cinnamon-roll.jpg";
-   rollTitleElement.innerText = newRoll.type + " Cinnamon Roll";
-   rollGlazingElement.innerText = newRoll.glazing;
-   rollSizeElement.innerText = "Pack size: " + newRoll.size;
-   rollPriceElement.innerText = newRoll.basePrice;
-   rollRemoveElement.innerText = "Remove";
+    rollTitleElement.innerText = newRoll.type + " Cinnamon Roll";
+    rollGlazingElement.innerText = newRoll.glazing;
+    rollSizeElement.innerText = "Pack size: " + newRoll.size;
+    rollPriceElement.innerText = newRoll.basePrice;
+    rollRemoveElement.innerText = "Remove";
 }
 
 //removes roll from cart and updates total price accordingly
