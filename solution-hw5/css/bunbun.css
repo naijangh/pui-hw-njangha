@@ -280,14 +280,15 @@ keeps the dividing line visible within the container
     flex-direction: row;
 }
 
+/*HEREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
 /*extends container all the way to the right without infringing upon price-container and gives space between text start and image on the left*/
-.item-details {
+.item-details { /*, .checkout-footer-total ? */
     flex-grow: 1;
     margin-left: 5%;
 }
 
 /*establishes a set width for the price container and makes sure item-details doesn't encroach (using flex-shrink), moves price down using padding to better replicate the example assignment images*/
-.price-container {
+.price-container { /* #total-price ? */
     margin-left: auto;
     width: 100px;
     flex-shrink: 0;
