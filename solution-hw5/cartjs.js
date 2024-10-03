@@ -97,7 +97,7 @@ function updateElement(newRoll) {
     rollTitleElement.innerText = newRoll.type + " Cinnamon Roll";
     rollGlazingElement.innerText = newRoll.glazing;
     rollSizeElement.innerText = "Pack size: " + newRoll.size;
-    rollPriceElement.innerText = newRoll.basePrice;
+    rollPriceElement.innerText = "$" + newRoll.basePrice;
     rollRemoveElement.innerText = "Remove";
 }
 
