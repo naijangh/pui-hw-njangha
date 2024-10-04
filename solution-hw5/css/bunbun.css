@@ -285,12 +285,13 @@ keeps the dividing line visible within the container
 .item-details { /*, .checkout-footer-total ? */
     flex-grow: 1;
     margin-left: 5%;
+    width: 300px;
 }
 
 /*establishes a set width for the price container and makes sure item-details doesn't encroach (using flex-shrink), moves price down using padding to better replicate the example assignment images*/
 .price-container { /* #total-price ? */
     margin-left: auto;
-    width: 170px;
+    width: 90px;
     flex-shrink: 0;
     padding: 40px 0px 0px 0px;
 }
