@@ -12,18 +12,11 @@ const rollType = params.get('roll');
 const descTitle = document.querySelector(".desc-page-title");
 descTitle.innerText = rollType + " cinnamon roll";
 
-//update base price
-//const descBasePrice = document.getElementById("product-page-price");
-//descBasePrice.innerText = .basePrice;
 
 //update image
 const descImage = document.querySelector(".product-desc-image");
 descImage.src = "../assets/products/" + rollType.toLowerCase() + "-cinnamon-roll.jpg";
 descImage.alt = "image of " + rollType + " cinnamon roll"
-
-/*if (rollType === "Double-Chocolate") {
-    price = rolls.Double-Chocolate.basePrice;
-}*/
 
 
 //UPDATE PRICE
@@ -175,8 +168,4 @@ function updateCart() {
 }
 
 
-//put if then into calculatePrice function
 
-
-
-//const cartSet = new Set(); 

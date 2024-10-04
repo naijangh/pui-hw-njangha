@@ -300,7 +300,7 @@ keeps the dividing line visible within the container
     display: flex;
     flex-direction: row;
     width: 400px;
-    margin-left: auto;
+    margin-left: 200px;
 }
 
 /*aligns total price and checkout button to right of screen and keeps the sizing static*/
@@ -320,5 +320,6 @@ keeps the dividing line visible within the container
 .checkout-footer-total {
     flex-grow: 1;
     text-align: center;
+    margin-left: 55px;
 }
 

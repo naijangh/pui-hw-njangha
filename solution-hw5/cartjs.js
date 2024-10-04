@@ -94,9 +94,10 @@ function updateElement(newRoll) {
     const rollPriceElement = newRoll.element.querySelector(".price-container");
     //updates DOM elements
     rollImageElement.src = "../assets/products/" + newRoll.type.toLowerCase() + "-cinnamon-roll.jpg";
+    rollImageElement.alt = "This is an image of a " + newRoll.type + " Cinnamon Roll.";
     rollTitleElement.innerText = newRoll.type + " Cinnamon Roll";
     rollGlazingElement.innerText = newRoll.glazing;
-    rollSizeElement.innerText = "Pack size: " + newRoll.size;
+    rollSizeElement.innerText = "Pack Size: " + newRoll.size;
     rollPriceElement.innerText = "$" + newRoll.basePrice;
     rollRemoveElement.innerText = "Remove";
 }
@@ -108,3 +109,8 @@ function deleteRoll(newRoll) {
     totalPrice = totalPrice - parseFloat(newRoll.basePrice);
     totalDisplayed.innerText = "$" + totalPrice.toFixed(2);
 }
+
+
+/* note to self for next homework: potential way to streamline price calculation function:
+Try this: calcPrice (variable) = (rolls[newRoll.type].basePrice + glaze.price) * size.price;
+*/
