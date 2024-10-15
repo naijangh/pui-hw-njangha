@@ -1,7 +1,10 @@
 
+let totalPrice = 0;
 //using code format of example on github, linked in hw 3 instruction doc
 //empty cart array
 let cart = [];
+
+
 
 //from hw to get roll type from URL
 const queryString = window.location.search;
@@ -147,7 +150,7 @@ function updateSizePrice() {
 packSizeSelect.addEventListener('change', updateSizePrice);
 
 
-//Print cart array (featuring code from hw instructions)
+//roll class plus constructor
 class Roll {
     constructor(rollType, rollGlazing, packSize, basePrice) {
         this.type = rollType;
@@ -161,11 +164,19 @@ const AddToCartButton = document.getElementById("addcart-button");
 
 AddToCartButton.addEventListener('click', updateCart);
 
+let totalDisplayed = document.getElementById("total-price");
+
+
 function updateCart() {
     /*const userInputGlazing = glazingSelect.value;
     const userInputSize = packSizeSelect.value; */
     let cartedRoll = new Roll (rollType, glazingSelect.value, packSizeSelect.value, newPrice);
    // createElement(cartedRoll);
+
+    calcRollPrice(cartedRoll);
+    totalPrice = totalPrice + parseFloat(cartedRoll.basePrice);
+    totalDisplayed.innerText = "$" + totalPrice.toFixed(2);
+
     cart.push(cartedRoll);
     console.log(cart);
     saveToLocalStorage();
@@ -179,70 +190,6 @@ function saveToLocalStorage() {
 }
 
 
-
-//function to create a DOM element for object
-/*
-function createElement(newRoll) {
-    const cartTemplate = document.querySelector("#cart-template"); //grabbing reference to template. (HTML inside the <template> tags is not rendered by the browser. But we can use JavaScript to copy the template and add these copies to the DOM.)
-    const clone = cartTemplate.content.cloneNode(true); //get the content in the template and copy using cloneNode. True means we want a deep copy
-    newRoll.element = clone.querySelector(".item-in-cart"); //storing a reference to newly copied element (if printed, this will show new html nodes within .item-in-cart)
-    const btnRemove = newRoll.element.querySelector(".remove-button"); //grabs remove html
-    btnRemove.addEventListener('click', () => {
-        deleteRoll(newRoll);
-    }); //attaches delete function to button click
-    const cartListElement = document.querySelector(".cart-page-container"); //reference to div that will contain cart items
-    cartListElement.prepend(newRoll.element);
-
-    updateElement(newRoll);
-}*/
-
-
-//PRODUCT DETAIL PAGE////////////////////////////////////
-//if local storage exists: proceed
-    //else: create new cart array
-
-//user inputs glazing and pack size
-    //price reflects changes
-
-//event listener on add to cart which does:
-    //Roll instance containing user input is added to cart array
-    //convert cart to JSON 
-        //save to local storage
-        //print contents of cart after saving
-
-//CART PAGE/////////////////////////////////////////////
-//retrieve cart from local storage
-    //if none exists: create an empty cart array
-
-//populate the DOM with items in cart storage (using template and stuff from HW5)
-
-//clicking remove removes item from cart array
-    //convert cart to JSON 
-        //save to local storage
-        //print the cart in local storage after storing!
-    //remove from DOM 
-    //update total price on cart page
-
-//PAY ATTENTION TO://///////////////////////////////////
-//only remove the object you want (don't touch duplicates)
-//print cart in local storage whenever it is updated
-//storage should persist through reload and going to diff pages
-
-
-//references lab 5 example
-
-//update total price displayed (within addNewRoll function)
-let totalDisplayed = document.getElementById("total-price");
-let totalPrice = 0;
-
-//creating a function to create new rolls and add to cart set with updated price
-function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
-    const newRoll = new Roll(rollType, rollGlazing, packSize, basePrice);
-    calcRollPrice(newRoll);
-    cart.push(newRoll);
-    totalPrice = totalPrice + parseFloat(newRoll.basePrice);
-    totalDisplayed.innerText = "$" + totalPrice.toFixed(2);
-}
 
 //takes Roll object as a parameter to calculate price
 function calcRollPrice(Roll) {
@@ -270,27 +217,15 @@ function calcRollPrice(Roll) {
     } else if (Roll.size === 12) {
         finalPrice = Roll.basePrice * 10;
     }
-    Roll.basePrice = finalPrice.toFixed(2);
-}
-
-//creating the four Roll objects    
-addNewRoll("Original", "Sugar milk", 1, 2.49);
-addNewRoll("Walnut", "Vanilla milk", 12, 3.49);
-addNewRoll("Raisin", "Sugar milk", 3, 2.99);
-addNewRoll("Apple", "Original", 3, 3.49);
-
-
-//add new roll but with json string?
-
-
-/////////////////////////////////////////////////////////////////////////
+    Roll.basePrice = parseInt(finalPrice).toFixed(2);
+};
 
 
 //loop through cart array to create a DOM element for each Roll object
 for (const newRoll of cart) {
     console.log(newRoll);
     createElement(newRoll);
-}
+};
 
 //function to create a DOM element for object
 function createElement(newRoll) {
@@ -305,7 +240,7 @@ function createElement(newRoll) {
     cartListElement.prepend(newRoll.element);
 
     updateElement(newRoll);
-}
+};
 
 
 //takes roll and updates correct DOM element
@@ -325,7 +260,7 @@ function updateElement(newRoll) {
     rollSizeElement.innerText = "Pack Size: " + newRoll.size;
     rollPriceElement.innerText = "$" + newRoll.basePrice;
     rollRemoveElement.innerText = "Remove";
-}
+};
 
 //removes roll from cart and updates total price accordingly
 function deleteRoll(newRoll) {
@@ -334,10 +269,7 @@ function deleteRoll(newRoll) {
     totalPrice = totalPrice - parseFloat(newRoll.basePrice);
     totalDisplayed.innerText = "$" + totalPrice.toFixed(2);
     saveToLocalStorage();
-}
-
-
-
+};
 
 
 function retrieveFromLocalStorage() {
@@ -349,29 +281,17 @@ function retrieveFromLocalStorage() {
         let thisGlazing = cartArray[i].glazing;
         let thisPackSize = cartArray[i].size;
         let thisBasePrice = cartArray[i].basePrice;
-
-        const roll = addnewRoll(thisRollType, thisGlazing, thisPackSize, thisBasePrice);
-        createElement(roll);
-        updateElement(roll);
+        createElement(cartArray[i]);
+        updateElement(cartArray[i]);
     };
-   /* for (const rollData of cartArray) {
-        const roll = addNewRoll(rollData.type, rollData.rollGlazing, rollData.packSize, rollData.basePrice);
-        createElement(roll);
-        updateElement(roll);
-    }*/
 };
+
+
+
 
 if (localStorage.getItem('storedRolls') != null) {
     retrieveFromLocalStorage();
 };
-
-
-/* note to self for next homework: potential way to streamline price calculation function:
-Try this: calcPrice (variable) = (rolls[newRoll.type].basePrice + glaze.price) * size.price;
-*/
-
-
-
 
 
 
