@@ -43,7 +43,13 @@ I want to teach people the proper way to build common cafe drinks. I could also 
 
 ## Feedback Summary
 
-Summarize all the critiques you received during the lab session (\~300 words). 
+Overall, the critique was very helpful. 
+
+For the Portfolio Proposal, they mentioned it might be difficult to code an entire portfolio from scratch when I do not have my projects to begin with within the time we have left in the semester. They also agreed with my concerns about coding in a sustainable manner where I will be able to go back and add more projects seamlessly with my tendency to rush. There was a suggestion to possible prioritize having another piece for my portfolio given my lack. 
+
+For the Written in the Stars Proposal, they asked about how people would navigate on the site, if I prefered an infinite canvas or a list view, if there will be a way to get back to start, or if I would include a search feature. They were intrigued by the storytelling aspect.
+
+My Barista Proposal got the most support. They felt there was more emotional value and nostalgia. The main suggestion was to decide on an aesthetic and the type of animations I would incorporate (like 2D SVGs).
 
 ## Feedback Digestion
 
