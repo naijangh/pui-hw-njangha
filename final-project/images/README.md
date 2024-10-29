@@ -15,11 +15,11 @@ Add a few sentences about your design. Briefly state the motivation of each proj
 
 ### *Idea 2*
 
-…
+![Written-In-The-Stars](../images/stars-sketch.jpg)
 
 ### *Idea 3*
 
-…
+![Barista](../images/barista-sketch.jpg)
 
 ## Feedback Summary
 
