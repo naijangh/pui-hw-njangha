@@ -4,7 +4,7 @@
 
 ### *Idea 1*
 
-![title for sketch1](images/sketch1.png)
+![Portfolio](images/portfolio-sketch.jpg)
 
 Add a few sentences about your design. Briefly state the motivation of each project idea. Example questions to answer:
 
