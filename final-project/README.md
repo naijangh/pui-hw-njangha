@@ -4,7 +4,7 @@
 
 ### *Idea 1*
 
-![Portfolio](../images/portfolio-sketch.jpg)
+![Portfolio](../final-project/images/portfolio-sketch.jpg)
 
 In this final project, I will use a library like react.js or vue.js to build my personal portfolio and showcase my projects. 
 
@@ -17,7 +17,7 @@ I want my portfolio to convey who I am as a designer (including my coding capabi
 
 ### *Idea 2*
 
-![Written-In-The-Stars](../images/stars-sketch.jpg)
+![Written-In-The-Stars](../final-project/images/stars-sketch.jpg)
 
 In this final project, I would use a library like AstroJs to allow users to move through constellations in the sky and read about the mythology behind them.
 
@@ -30,7 +30,7 @@ I want to educate and entertain people about Ancient Greek mythology. I also enj
 
 ### *Idea 3*
 
-![Barista](../images/barista-sketch.jpg)
+![Barista](../final-project/images/barista-sketch.jpg)
 
 In this final project, I would use a game to teach people about the proper recipes and procedures of creating common cafe drinks like a latte, cappuccino, americano, etc.
 
