@@ -89,7 +89,10 @@ After the group critique, I plan to continue with my first design (Prototype 1).
 ### *Libraries and Other Components*
 
 List the JS libraries and other components (if applicable) that you plan to use. 
-* 
+* micron.js for microinteractions within my game
+* Google images for different icons
+
+If I come across any other libraries, I will come back and update accordingly.
 
 
 ## Generative AI Use Plan
@@ -103,6 +106,9 @@ I plan to use GenAI tools as a debugging resource. I will upload my current code
 * Microsoft Copilot  
   * I will use it for checking my current code because it can help me debug or understand error messages  
   * I will not use it for complex errors like logic errors because it might not be able to help me with figuring that out. It will probobaly keep generate basic debugging tips and reminders.
+
+* Adobe Stock
+  * I will use this to generate stock images for my backgrounds
    
   This is all I have experience with GenAI-wise. For this project, I might explore other tools like Chat-GPT or Perplexity or Github Copilot. If I do decide to try those tools and implement them, I will come back to this document and update accordingly. 
 
