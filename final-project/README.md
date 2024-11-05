@@ -28,15 +28,14 @@ Discuss the user feedback you got during the evaluation / usability test (\~300 
 
 I got a lot of feedback from the user studies. I decided to implement the following changes in my updated designs based on user feedback:
 
-# Prototype 1
-
+### *Prototype 1*
 * When landing on the gameplay screen, P1 felt it was vague and didn’t know whether to add all the ingredients or only certain ones and if order mattered
 * P1 wanted feedback for wrong selections
 * P1 wasn’t sure when they were done creating the drink
 * P2 expected the hint to allude to potential ingredients needed
 * P2 needed more contrast on the milk foam layer (they couldn’t see a change)
 
-# Prototype 2
+### *Prototype 2*
 * P1 and P2 said the separate ingredients in the cup should blend and match the other drink to show it’s done for Modes 1 and 2
 * P2 said the “correct!” feedback in Mode 1 was too small
 * P2 felt the “please select one” instructions should be removed once the correct choice is selected for clarity
