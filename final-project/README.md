@@ -44,8 +44,10 @@ I got a lot of feedback from the user studies. I decided to implement the follow
 
 ## Updated Designs
 
+### *Prototype 1*
 ![HiFi 1 Edits](../final-project/images/hifi1-edits.JPG)
 
+### *Prototype 2*
 ![HiFi 2 Edits](../final-project/images/hifi2-edits.JPG)
 
 ## Feedback Summary
@@ -110,11 +112,11 @@ I plan to use GenAI tools as a debugging resource. I will upload my current code
 * Adobe Stock
   * I will use this to generate stock images for my backgrounds
    
-  This is all I have experience with GenAI-wise. For this project, I might explore other tools like Chat-GPT or Perplexity or Github Copilot. If I do decide to try those tools and implement them, I will come back to this document and update accordingly. 
+This is all I have experience with GenAI-wise. For this project, I might explore other tools like Chat-GPT or Perplexity or Github Copilot. If I do decide to try those tools and implement them, I will come back to this document and update accordingly. 
 
 ### *Responsible Use*
 
-I woudl use Generative AI responsibly by always citing when I use it in the comments in my code. I will also make sure I fully understand any generated code I choose to include. In addition to that, I will double check with the TA or professors to make sure the generated code is still following clean code practices. 
+I would use Generative AI responsibly by always citing when I use it in the comments in my code. I will also make sure I fully understand any generated code I choose to include. In addition to that, I will double check with the TA or professors to make sure the generated code is still following clean code practices. 
 
 ---
 
