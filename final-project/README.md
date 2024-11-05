@@ -1,3 +1,119 @@
+# **FP2 \- Evaluation of the Final project**
+
+## Project Description
+
+My project is a coffee shop game that teaches people how to recreate popular coffee shop drinks like cappuccinos, lattes, and macchiatos.
+
+## High-Fi Prototypes
+
+### *Prototype 1*
+
+![Barista HiFi 1](../final-project/images/hifi1.png)
+
+![Barista HiFi 1](../final-project/images/hifi1.1.png)
+
+Users enjoyed the aesthetics of this game. They felt it was more intuitive than the other hifi prototype, but still was a little vague on the instructions once it was time to play the game. At this point, the 'how to play' button on the prototype does not work.
+
+### *Prototype 2*
+
+![Barista HiFi 2](../final-project/images/hifi2.1.png)
+
+![Barista HiFi 2](../final-project/images/hifi2.2.png)
+
+Users thought the multiple modes was cool but still enjoyed the first game more. Some important features felt a little too blended into the background which affected clarity in the design.
+
+## Usability Test
+
+Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
+
+I got a lot of feedback from the user studies. I decided to implement the following changes in my updated designs based on user feedback:
+
+# Prototype 1
+
+* When landing on the gameplay screen, P1 felt it was vague and didn’t know whether to add all the ingredients or only certain ones and if order mattered
+* P1 wanted feedback for wrong selections
+* P1 wasn’t sure when they were done creating the drink
+* P2 expected the hint to allude to potential ingredients needed
+* P2 needed more contrast on the milk foam layer (they couldn’t see a change)
+
+# Prototype 2
+* P1 and P2 said the separate ingredients in the cup should blend and match the other drink to show it’s done for Modes 1 and 2
+* P2 said the “correct!” feedback in Mode 1 was too small
+* P2 felt the “please select one” instructions should be removed once the correct choice is selected for clarity
+* P2 almost missed the text change in Mode 2 because their eyes were guided to the opposite side of the screen. The change needs to be more salient
+
+
+## Updated Designs
+
+![HiFi 1 Edits](../final-project/images/hifi1-edits.JPG)
+
+![HiFi 2 Edits](../final-project/images/hifi2-edits.JPG)
+
+## Feedback Summary
+
+During the lab session, my peers advised that I proceed with the first design. The second design was more confusing to navigate and the first one had helpful onboarding information. They suggested I try to solve any vagueness my users felt in the first design through progressive disclosure. They also really liked my animations and concept.
+
+After the group critique, I plan to continue with my first design (Prototype 1). I also want to try implementing progressive disclosure and fleshing out the onboarding process to make the objectives more clear to the user.
+
+## Milestones
+
+### *Implementation Plan*
+
+- [X] Week 9 Oct 28 \- Nov 1:
+  - [X] FP1 due
+  
+- [ ] Week 10 Nov 4 \- Nov 8:   
+  - [X] FP2 due
+  - [ ] confirm JS library choice
+  - [ ] start to learn about how to implement a library
+
+- [ ] Week 11 Nov 11 \- Nov 15:  
+  - [ ] FP3 check in
+  - [ ] Have skeleton HTML done
+  - [ ] Begin adding CSS
+  - [ ] Add library to code
+
+- [ ] Week 12 Nov 18 \- Nov 22: 
+  - [ ] Continue working on CSS
+  - [ ] Begin working on Vanilla JS
+  - [ ] Start to implement library
+
+- [ ] Week 13 Nov 25 \- Nov 29:  
+  - [ ] Thanksgiving  
+  - [ ] Finish up JS
+  - [ ] Debug
+
+- [ ] Week 14 Dec 2 \- Dec 6:  
+  - [ ] Debug
+  - [ ] FP4 due
+
+### *Libraries and Other Components*
+
+List the JS libraries and other components (if applicable) that you plan to use. 
+* 
+
+
+## Generative AI Use Plan
+
+I plan to use GenAI tools as a debugging resource. I will upload my current code and ask it to help me identify what's wrong with it. If I encounter confusing code on the internet when I am googling my error code, I will also ask GenAI to help me understand the code I find. If I get really stuck and ask it to generate code, I will also ask it to explain the code so I can understand everything I include in my code files. 
+
+### *Tool Use*
+
+ What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
+
+* Microsoft Copilot  
+  * I will use it for checking my current code because it can help me debug or understand error messages  
+  * I will not use it for complex errors like logic errors because it might not be able to help me with figuring that out. It will probobaly keep generate basic debugging tips and reminders.
+   
+  This is all I have experience with GenAI-wise. For this project, I might explore other tools like Chat-GPT or Perplexity or Github Copilot. If I do decide to try those tools and implement them, I will come back to this document and update accordingly. 
+
+### *Responsible Use*
+
+I woudl use Generative AI responsibly by always citing when I use it in the comments in my code. I will also make sure I fully understand any generated code I choose to include. In addition to that, I will double check with the TA or professors to make sure the generated code is still following clean code practices. 
+
+---
+
+
 # **FP1 \- Proposal for Critique**
 
 ## Idea Sketches
