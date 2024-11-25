@@ -1,6 +1,0 @@
-body {
-    background-image: url("cafe-background.JPG");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; /*cover;*/ /*image covers all of body*/
-    background-attachment: fixed; /*image remains in position when scrolling */
-} /*code form freeCodeCamp.org */

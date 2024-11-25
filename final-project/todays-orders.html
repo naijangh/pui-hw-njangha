@@ -3,37 +3,45 @@
 
     <head>
     <meta charset="UTF-8">
-    <!--<link rel="stylesheet" href="" />
-    <script src=""></script>-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--per w3 schools for responsive web-->
+    <link rel="stylesheet" href="../final-project/css/barista-other-pages.css"/>
     <!--<script defer src=""></script>-->
     <title>Barista</title>
     </head>
 
 
     <body>
-        <img src="../final-project/images/cafe-background.JPG">
+        <!--<img src="../final-project/images/cafe-background.JPG">-->
         <nav>
-            <h2>BARISTA</h2>
-            <button>Home</button>
-            <button>Help</button>
+            <a href="title-page.html"><h2>BARISTA</h2></a>
+            <a href="title-page.html"><button class="nav-button">HOME</button></a>
+            <a href="title-page.html"><button class="nav-button">HELP</button></a> 
         </nav>
-
-        <p>Today's orders</p>
-        <hr>
-        <p>Cappuccino.......... x1</p> 
-        <button>Create</button>
-        <!--eventually a random number generator in js?-->
-        <p>Macchiato........... x1</p> 
-        <button>Create</button>
-        <!--local storage to take average of ratings-->
-        <p>Americano........... x1</p> 
-        <button>Create</button>
-        <!--assigning params to take to each corresponding page-->
-        <h2>BARISTA</h2>
-
-        <p>What shall we create first?</p> <!--no 'first?'-->
-        <!--img src-->
-        <p>loading...</p>
+        <main>
+            <div class="receipt">
+                <div class="receipt-contents">
+                    <p>TODAY'S ORDERS</p>
+                    <hr>
+                    <p>Cappuccino.......... x1</p> 
+                    <a href="drink-creation.html"><!--?params--><button class="create-button">CREATE</button></a>
+                    <!--eventually a random number generator in js?-->
+                    <br>
+                    <p>Macchiato........... x1</p> 
+                    <a href="drink-creation.html"><!--?params--><button class="create-button">CREATE</button></a>
+                    <!--local storage to take average of ratings-->
+                    <br>
+                    <p>Americano........... x1</p> 
+                    <a href="drink-creation.html"><!--?params--><button class="create-button">CREATE</button></a>
+                    <!--assigning params to take to each corresponding page-->
+                    <!--<h2>BARISTA</h2>-->
+                </div>
+            </div>
+            <div class="order-space">
+                <p class="call-to-action">What shall we create?</p> <!--no 'first?'-->
+                <!--img src or loading animation-->
+                <p class="loading-text">loading...</p>
+            </div>
+        </main>
 
 
     </body>

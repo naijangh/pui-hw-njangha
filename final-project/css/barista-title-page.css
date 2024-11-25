@@ -1,0 +1,147 @@
+body {
+    background-image: url("cafe-background.JPG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*cover;*/ /*image covers all of body*/
+    background-attachment: fixed; /*image remains in position when scrolling */
+} /*code form freeCodeCamp.org */
+
+.title-page-components {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    position: absolute; /*puts elements into center of page per w3schools*/
+    top: 25%;
+    width: 100%;
+}
+
+.main-title {
+   /*background-color: red; */
+}
+
+.lower-half {
+   /* background-color: blue; */
+    display: flex;
+    flex-direction: column; 
+}
+
+.home-buttons {
+   /* background-color: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /*or space-around*/
+    padding: 50px 0px;
+}
+
+h1 { /*figma dev tool*/
+    /*font-size: 400px;
+    color: rgb(75, 8, 8);
+    -webkit-text-stroke: 2px bisque; /*geeksforgeeks referenced for adding stroke)*/ 
+
+    display: flex;
+    width: 1274px;
+    height: 253px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #412D2D;
+    text-align: center;
+    -webkit-text-stroke: 5px #BEB2B2;
+    
+    font-family: "Inria Serif";
+    font-size: 300px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sign { /*figma dev tool*/
+    width: 765px;
+    height: 207px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #3A3838;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #725D5D;
+    display: flex;
+    width: 766px;
+    height: 207px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   /* font-family: Inika; */
+    font-size: 156px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*z-index determines order of things when overlapping*/
+
+/*
+.cafe-sign {
+    font-size: 112px;
+    background-color: rgb(75, 8, 8);
+    color: bisque;
+    padding: 50px;
+    border-style: ridge;
+    border-width: 10px;
+    border-color: bisque;
+} */
+
+.how-to-play-button { /*figma dev tool*/
+   /* background-color: bisque;
+    border: none;
+    color:rgb(75, 8, 8);
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 48px;
+    border-radius: 8px; */
+    
+    width: 308px;
+    height: 66px;
+    
+    color: #725D5D;
+   /* font-family: "Istok Web"; */
+    font-size: 32px;
+    font-style: normal; 
+    font-weight: 700;
+    line-height: normal;
+    
+    width: 346px;
+    height: 99px;
+    border-radius: 17px;
+    background: #D9D9D9;
+    border-style: none;
+}
+
+.play-button { /*figma dev tool*/
+    /*background-color: rgb(75, 8, 8);
+    border: none;
+    color:bisque;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 48px;
+    border-radius: 8px; */
+    width: 308px;
+    height: 66px;
+
+    color: #D9D9D9;
+   /* font-family: "Istok Web"; */
+    font-size: 32px;
+    font-style: normal; 
+    font-weight: 700;
+    line-height: normal;
+    
+    width: 346px;
+    height: 99px;
+    border-radius: 17px;
+    background: #725D5D;
+    border-style: none;
+}
+

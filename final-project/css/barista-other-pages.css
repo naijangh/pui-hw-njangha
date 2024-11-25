@@ -1,0 +1,214 @@
+/*media queries!*/
+
+body {
+    background-image: url("cafe-background.JPG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*cover;*/ /*image covers all of body*/
+    background-attachment: fixed; /*image remains in position when scrolling */
+} /*code form freeCodeCamp.org */
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 30px;
+    gap: 80px; /*stackoverflow gap makes spaces between flexbox elements*/
+}
+
+h2 {
+    color: #412D2D;
+    text-align: center;
+    -webkit-text-stroke: 1px #BEB2B2;
+    font-size: 85px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.nav-button {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 50px 75px;
+    background-color: transparent;
+    border-style: none;
+}
+
+main {
+    display: flex;
+    display: row;
+    align-items: center;
+    justify-content: center;
+}
+.receipt { 
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    width: 455px;
+    height: 900px;
+    flex-shrink: 0;
+    background: #D9D9D9;
+    margin: 80px;
+}
+
+.receipt-contents { /*figma dev tool*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #412D2D;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    flex-grow: 1; /*stackoverflow for horizantal hr instead of vertical*/
+}
+
+hr {
+    width: 85%; /*stackoverflow for horizantal hr instead of vertical*/
+    background-color: #412D2D; /* styling from geeksforgeeks*/
+    height: 3px;
+    border: none;
+}
+
+.create-button { /*figma dev tool*/
+    width: 342px; 
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #725D5D;
+    color: #D9D9D9;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-style: none;
+}
+
+.order-space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    width: 800px;
+    height: 1100px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #3A3838;
+    margin: 50px;
+    border-radius: 24px;
+    border-color: #725D5D;
+    border-style: solid;
+    border-width: 20px;
+}
+
+.call-to-action {
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.loading-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    width: 687px;
+    height: 700px;
+    flex-shrink: 0;
+    border: 2px solid #F5F5F5;
+    background: rgba(245, 245, 245, 0.28);
+    margin: 80px;
+}
+
+th, td {
+    border: 2px solid #F5F5F5;
+}
+
+.ing-table-img {
+    width: 207px;
+    height: 223.5px;
+}
+
+h3 {
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.order-space-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+
+.drink-title {
+    color: #D9D9D9;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.order-header-button { /*figma-dev-tool*/
+    border-radius: 10px;
+    background: #725D5D;
+    width: 342px;
+    height: 40px;
+    color: #D9D9D9;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    border-style: none;
+}
+
+.mug {
+    width: 640px;
+    height: 640px;
+    margin: 80px;
+}
+
+.submit-button {
+    width: 240.902px;
+    height: 73px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #725D5D;
+    border-style: none;
+    color: #D9D9D9;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 50px;
+}
