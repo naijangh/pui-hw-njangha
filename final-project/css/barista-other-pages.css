@@ -133,22 +133,32 @@ hr {
 table {
     display: flex;
     flex-direction: column;
-    width: 33%;
-    width: 687px;
-    height: 700px;
     flex-shrink: 0;
     border: 2px solid #F5F5F5;
     background: rgba(245, 245, 245, 0.28);
     margin: 80px;
+    border-collapse: collapse; /* w3schools, turns double table border into single border */
 }
 
 th, td {
     border: 2px solid #F5F5F5;
+    text-align: center;
+}
+
+.table-text {
+    color: #725D5D;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 0;
+    background-color: white;
 }
 
 .ing-table-img {
     width: 207px;
     height: 223.5px;
+    margin: 30px;
 }
 
 h3 {
@@ -180,8 +190,8 @@ h3 {
 .order-header-button { /*figma-dev-tool*/
     border-radius: 10px;
     background: #725D5D;
-    width: 342px;
-    height: 40px;
+    width: 142px;
+    height: 50px;
     color: #D9D9D9;
     text-align: center;
     font-size: 16px;
@@ -195,6 +205,13 @@ h3 {
     width: 640px;
     height: 640px;
     margin: 80px;
+    position: relative;
+}
+
+#rating {
+    position: absolute;
+    color: white;
+    font-size: 96px;
 }
 
 .submit-button {

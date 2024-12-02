@@ -4,7 +4,7 @@
     <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../final-project/css/barista-other-pages.css"/>
-    <!--<script defer src=""></script>-->
+    <script defer src="../final-project/barista.js"></script>
     <title>Barista</title>
     </head>
 
@@ -26,22 +26,27 @@
                 <h3>Ingredients</h3>
                 <table>
                     <tr>
-                        <th>Espresso</th><!--button?-->
-                        <td><img class="ing-table-img" src="../final-project/images/espresso.png"></td>
-                        <th>Hot Chocolate</th>
-                        <td><img class="ing-table-img" src="../final-project/images/hot-chocolate.png"></td>
+                        <td><p class="table-text">Espresso</p><!--button?-->
+                        <img class="ing-table-img" id="espresso" src="../final-project/images/espresso.png" alt="espresso ingredient"></td>
+                       
+                        <td><p class="table-text">Hot Chocolate</p>
+                        <img class="ing-table-img" id="hot-chocolate" src="../final-project/images/hot-chocolate.png" alt="hot chocolate ingredient"></td>
                     </tr>
+
                     <tr>
-                        <th>Ice</th>
-                        <td><img class="ing-table-img" src="../final-project/images/ice-cubes.png"></td>
-                        <th>Water</th>
-                        <td><img class="ing-table-img" src="../final-project/images/water.png"></td>
+                        <td><p class="table-text">Ice</p>
+                        <img class="ing-table-img" id="ice" src="../final-project/images/ice-cubes.png" alt="ice ingredient"></td>
+                        
+                        <td><p class="table-text">Water</p>
+                        <img class="ing-table-img" id="water" src="../final-project/images/water.png" alt="water ingredient"></td>
                     </tr>
+
                     <tr>
-                        <th>Steamed Milk</th>
-                        <td><img class="ing-table-img" src="../final-project/images/steamed-milk.png"></td>
-                        <th>Milk Foam</th>
-                        <td><img class="ing-table-img" src="../final-project/images/milk-foam.png"></td>
+                        <td><p class="table-text">Steamed Milk</p>
+                        <img class="ing-table-img" id="steamed-milk" src="../final-project/images/steamed-milk.png" alt="steamed milk ingredient"></td>
+                        
+                        <td><p class="table-text">Milk Foam</p>
+                        <img class="ing-table-img" id="milk-foam" src="../final-project/images/milk-foam.png" alt="milk foam ingredient"></td>
                     </tr>
                 </table>
             </div>
@@ -49,10 +54,11 @@
             <div class="order-space">
                 <div class="order-space-header">
                     <a href="../final-project/todays-orders.html"><button class="order-header-button">GO BACK</button></a> 
-                    <p class="drink-title">Cappuccino.......... x1</p>
+                    <p class="drink-title"></p>
                     <button class="order-header-button">SHOW HINT</button>
                 </div>
-                <img class="mug" src="../final-project/images/mug.png">
+                <img class="mug" src="../final-project/images/mug.png" alt="empty mug">
+                <p id="rating"></p>
                 <button class="submit-button">SUBMIT</button> <!--JS function where clicking submit updates the html to the "nice job", stars, and progression arrow, check marks, cross out, etc-->
             </div>
             <!--main image left blank for js overwrite?-->
