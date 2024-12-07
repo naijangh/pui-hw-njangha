@@ -229,3 +229,8 @@ h3 {
     line-height: normal;
     margin-bottom: 50px;
 }
+
+/*disabling clicking events after initial click (referencing slingacademy.com) */
+.disabled {
+    pointer-events: none;
+}

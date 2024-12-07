@@ -187,9 +187,7 @@ function createElement(newRoll) {
     const clone = cartTemplate.content.cloneNode(true); //get the content in the template and copy using cloneNode. True means we want a deep copy
     newRoll.element = clone.querySelector(".item-in-cart"); //storing a reference to newly copied element (if printed, this will show new html nodes within .item-in-cart)
     const btnRemove = newRoll.element.querySelector(".remove-button"); //grabs remove html
-    btnRemove.addEventListener('click', () => {
-        deleteRoll(newRoll);
-    }); //attaches delete function to button click
+    btnRemove.addEventListener('click' //attaches delete function to button click
     const cartListElement = document.querySelector(".cart-page-container"); //reference to div that will contain cart items
     cartListElement.prepend(newRoll.element);
 
