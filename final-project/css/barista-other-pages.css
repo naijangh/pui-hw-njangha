@@ -59,7 +59,7 @@ main {
     margin: 80px;
 }
 
-.receipt-contents #todays-orders { /*figma dev tool*/
+.receipt-contents { /*figma dev tool*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +71,10 @@ main {
     font-weight: 700;
     line-height: normal;
     flex-grow: 1; /*stackoverflow for horizantal hr instead of vertical*/
+}
+
+#todays-orders {
+    color: #412D2D;
 }
 
 hr {
