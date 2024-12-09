@@ -73,9 +73,7 @@ main {
     flex-grow: 1; /*stackoverflow for horizantal hr instead of vertical*/
 }
 
-#todays-orders {
-    color: #412D2D;
-}
+
 
 hr {
     width: 85%; /*stackoverflow for horizantal hr instead of vertical*/
@@ -173,6 +171,7 @@ h3 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    background-color: #352b2b;
 }
 
 .order-space-header {
