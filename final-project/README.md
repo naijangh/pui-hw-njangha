@@ -2,7 +2,20 @@
 
 ## Screen Sizes
 
+Please test the interface at the following screen sizes:
+* Standard: 2000 x 1550
+* Smaller size: 1125 x 1350 (content becomes a column)
+
 ## Accessibility Check
+
+Title Page:
+
+Order Page:
+
+Drink Creation Page:
+
+Instructions Page:
+
 
 ## Part 1: Website Description
 
