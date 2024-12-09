@@ -19,9 +19,12 @@ Order Page:
 ![details for order page](../final-project/images/order-page-details.jpg)
 
 Drink Creation Page:
+![summary for drink creation page](../final-project/images)
+![details for drink creation page](../final-project/images)
 
 Instructions Page:
-
+![summary for instructions page](../final-project/images)
+![details for instructions page](../final-project/images)
 
 ## Part 1: Website Description
 
