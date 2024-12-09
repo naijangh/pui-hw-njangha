@@ -10,7 +10,7 @@ Please test the interface at the following screen sizes:
 
 ## Accessibility Check
 ### Title Page:
-![accesibility summary and details for the title page](../final-project/images/title-page.JPG)
+![accesibility summary and details for the title page](../final-project/images/title-page.jpg)
 
 ### Order Page:
 ![accesibility summary and details for the order page](../final-project/images/orders-page.JPG)
