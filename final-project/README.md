@@ -6,15 +6,17 @@ Please test the interface at the following screen sizes:
 * Standard: 2000 x 1550
 * Smaller size: 1125 x 1350 (content becomes a column)
 
-https://naijangh.github.io/pui-hw-njangha/final-project/title-page.html
+[BARISTA](https://naijangh.github.io/pui-hw-njangha/final-project/title-page.html)
 
 ## Accessibility Check
 
 Title Page:
-(../final-project/images/title-page-summary.jpg)
-(../final-project/images/title-page-details.jpg)
+![summary for title page](../final-project/images/title-page-summary.jpg)
+![details for title page](../final-project/images/title-page-details.jpg)
 
 Order Page:
+![summary for order page](../final-project/images/order-page-summary.jpg)
+![details for order page](../final-project/images/order-page-details.jpg)
 
 Drink Creation Page:
 
