@@ -247,3 +247,10 @@ h3 {
         flex-direction: column;
     }
 }
+
+@media (max-width: 1392px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
