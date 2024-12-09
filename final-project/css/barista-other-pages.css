@@ -59,7 +59,7 @@ main {
     margin: 80px;
 }
 
-.receipt-contents { /*figma dev tool*/
+.receipt-contents #todays-orders { /*figma dev tool*/
     display: flex;
     flex-direction: column;
     align-items: center;
