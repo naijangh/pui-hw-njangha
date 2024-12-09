@@ -3,6 +3,9 @@
 
     <head>
     <meta charset="UTF-8">
+    <!--micron.js library CDN-->
+    <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+    <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../final-project/css/barista-other-pages.css"/>
     <script defer src="../final-project/barista.js"></script>
     <title>Barista</title>
@@ -13,7 +16,7 @@
         <nav>
             <a href="title-page.html"><h2>BARISTA</h2></a>
             <a href="title-page.html"><button class="nav-button">HOME</button></a>
-            <a href="title-page.html"><button class="nav-button">HELP</button></a>
+            <a href="instructions.html"><button class="nav-button">HELP</button></a>
         </nav>
         
         <main>
@@ -23,26 +26,26 @@
                 <table>
                     <tr>
                         <td><p class="table-text">Espresso</p>
-                        <img class="ing-table-img" id="espresso" src="../final-project/images/espresso.png" alt="espresso ingredient"></td>
+                        <img class="ing-table-img" id="espresso" src="../final-project/images/espresso.png" alt="espresso ingredient" data-micron="tada"></td>
                        
                         <td><p class="table-text">Hot Chocolate</p>
-                        <img class="ing-table-img" id="hot-chocolate" disabled="false" src="../final-project/images/hot-chocolate.png" alt="hot chocolate ingredient"></td>
+                        <img class="ing-table-img" id="hot-chocolate" disabled="false" src="../final-project/images/hot-chocolate.png" alt="hot chocolate ingredient" data-micron="tada"></td>
                     </tr>
 
                     <tr>
                         <td><p class="table-text">Ice</p>
-                        <img class="ing-table-img" id="ice" src="../final-project/images/ice-cubes.png" alt="ice ingredient"></td>
+                        <img class="ing-table-img" id="ice" src="../final-project/images/ice-cubes.png" alt="ice ingredient" data-micron="tada"></td>
                         
                         <td><p class="table-text">Water</p>
-                        <img class="ing-table-img" id="water" src="../final-project/images/water.png" alt="water ingredient"></td>
+                        <img class="ing-table-img" id="water" src="../final-project/images/water.png" alt="water ingredient" data-micron="tada"></td>
                     </tr>
 
                     <tr>
                         <td><p class="table-text">Steamed Milk</p>
-                        <img class="ing-table-img" id="steamed-milk" src="../final-project/images/steamed-milk.png" alt="steamed milk ingredient"></td>
+                        <img class="ing-table-img" id="steamed-milk" src="../final-project/images/steamed-milk.png" alt="steamed milk ingredient" data-micron="tada"></td>
                         
                         <td><p class="table-text">Milk Foam</p>
-                        <img class="ing-table-img" id="milk-foam" src="../final-project/images/milk-foam.png" alt="milk foam ingredient"></td>
+                        <img class="ing-table-img" id="milk-foam" src="../final-project/images/milk-foam.png" alt="milk foam ingredient" data-micron="tada"></td>
                     </tr>
                 </table>
             </div>
@@ -53,7 +56,7 @@
                     <p class="drink-title"></p>
                     <button class="order-header-button" id="hint-button">HINT</button>
                 </div>
-                <img class="mug" src="../final-project/images/mug.png" alt="empty mug">
+                <img class="mug" id="drink-page-mug" src="../final-project/images/mug.png" alt="empty mug">
                 <p id="rating"></p>
                 <button class="submit-button">SUBMIT</button> 
             </div>

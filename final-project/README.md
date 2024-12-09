@@ -1,3 +1,135 @@
+# **FP4 \- Final Project Writeup**
+
+## Screen Sizes
+
+## Accessibility Check
+
+## Part 1: Website Description
+
+* My website, BARISTA, is meant to be a fun game where people can play and learn about what goes into their favorite cafe drinks. 
+* The target audience is coffee lovers who enjoy cozy vibes and are considering making drinks at home more often. In future iterations, this game could also be used to train new baristas.
+* The drinks I am specifically teaching people to make are Cappuccinos, Macchiatos, and Americanos.
+* The game itself is engaging through a guessing format, and little animations/feedback that are meant to sustain attention.
+
+## Part 2: User Interaction
+
+1. Click on the "How To Play" button to learn about the game mechanics.
+2. Click on the "Play" button to start the game.
+3. From the list of drinks on the next page, decide on the beverage you want to recreate, and click the "Create" button.
+4. From the table of ingredients, select the ones you think go into the beverage one at a time. The ingredient will turn into a green check if it is correct or a red x if it is incorrect.
+5. If you need a hint, click on the "Hint" button to learn how many ingredients there are.
+6. Click the "Submit" button if you think you are done. 
+7. The cup will fill up and give you a rating (based on how many you guessed right/wrong) if all the ingredients are guessed.
+8. If you are missing ingredients and click "Submit", you will encounter a pop-up that alerts you of missing ingredients.
+9. Click the "Back" button to return to the other drink options to play again.
+
+## Part 3: External Tool
+
+Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
+
+1. Micron.js 
+   * I chose to use this tool over the others because the implementation process made sense and it had the interactions/animations I wanted
+   * I used it to make the green checks and red xs more interactive and engaging. It is also very quickly applied to the home screen buttons.
+   * Micron.js adds a fun element of surprise. It also makes changes on the page more salient for users. 
+
+## Part 4: Design Iteration
+
+While implementing my website, I simplified (sometimes completely removed) a lot of interactions from my prototype. I cut out the beginning animation of the CLOSED/OPEN cafe sign, changed the pouring animations, and replaced the star rating system with numbers. I made these changes because they were a lot harder to implement than I expected. I felt like the video shown in class of one person having fun designing in figma and the other person fighting for their life trying to code it. I was the person fighting for my life. I made edits based on ability and time availability.
+
+## Part 5: Implementation Challenge
+
+I had a difficult time translating my figma prototype into css. I also faced the challenge of mimicking the animations I created in figma (especially the liquid ones).
+
+## Part 6: Generative AI Use and Reflection
+
+I used Adobe Stock AI to generate an image of a cafe for my website's background. I had to prompt the platform a few times to get the color palette I wanted correct. I found this to save me a lot of time. Originally, I had planned on drawing the background myself, but that was really unfeasible.
+
+
+### Usage Experiences by Project Aspects
+
+| Tool Name | Ratings | design | plan | write code | debug |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| Adobe Stock AI | Usage | Yes | No | No | No | No |
+| Adobe Stock AI | Productivity | 7 | n/a | n/a | n/a | n/a|
+
+
+### Usage Reflection
+
+> Impact on your design and plan 
+* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that I used Adobe Stock AI to find a background photo.
+* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that I did not use Microsoft Copilot or other tools for debugging or code generation. 
+* GenAI tool did influence my final design and implementation plan because generating the background image saved me a lot of time since I could spend it coding instead of drawing.
+
+> Use patterns
+* I accepted the generations when the image aligned with what I was looking for. For example, 
+  1. Adobe Stock AI: when they produced a cartoon image of a cafe using a brown color palette, I downloaded it.
+* I critiqued/evaluated the generated suggestions by adding more detail to my prompt. For example,
+  1. Adobe Stock AI: the results from me prompting a 'drawing of a cafe' were too bright. I had to edit my prompt with 'using a brown color palette' to get the results I wanted. 
+
+
+> Pros and cons of using GenAI tools
+* Pros
+  1. Adobe Stock AI: This tool is quick and is good at making edits based on user input. It also produces unique images. 
+* Cons
+  1. Adobe Stock AI: This tool may not be able to replicate exactly what you envision so you may have to settle.
+
+
+### Usage Log
+
+Adobe Stock AI: I couldn't find a link to my Adobe Stock AI chat history, but I basically prompted for an 'image of a drawing of a cafe.' And then I prompted for an 'image of a drawing of a cafe with a brown color palette.' Then I selected the best result (seen in the background of my website).
+
+---
+
+
+
+# **FP3 \- Final Project Check-in**
+
+Document the changes and progress of your project. How have you followed or changed your implementation & GenAI use plan and why? Remember to commit your code to save your progress.
+
+## Implementation Plan Updates
+
+- [- [X] Week 9 Oct 28 \- Nov 1:
+  - [X] FP1 due
+  
+- [ ] Week 10 Nov 4 \- Nov 8:   
+  - [X] FP2 due
+  - [ ] confirm JS library choice
+  - [ ] start to learn about how to implement a library
+
+- [ ] Week 11 Nov 11 \- Nov 15:  
+  - [X] FP3 check in
+  - [X] Have skeleton HTML done
+  - [X] Begin adding CSS
+  - [ ] Add library to code
+
+- [ ] Week 12 Nov 18 \- Nov 22: 
+  - [X] Continue working on CSS
+  - [X] Begin working on Vanilla JS
+  - [ ] Start to implement library
+
+- [ ] Week 13 Nov 25 \- Nov 29:  
+  - [X] Thanksgiving  
+  - [ ] Finish up JS
+  - [ ] Debug
+
+- [ ] Week 14 Dec 2 \- Dec 6:  
+  - [ ] Debug
+  - [ ] FP4 due
+
+  I have a bit of catching up to do, but I ultimately feel like I am still in a good spot.
+
+## Generative AI Use Plan Updates
+
+- I haven't used genAI like I thought I would. I did not use Microsoft Copilor for dubugging. If I run into an error, I mainly debug my code by googling what might be wrong, using console.log(), or googling how to get the code to do what I want and examining other people's approaches. I have typically found success this way. Usually, one search gives me the keyword I need which leads to another search which leads to the solution.
+
+I did use figma's dev tool (I am not sure if that is genAI) to help me match the css to my prototype. 
+
+I also used Adobe Stock AI to generate a cafe image for my website's background. 
+
+---
+
+
+
 # **FP2 \- Evaluation of the Final project**
 
 ## Project Description

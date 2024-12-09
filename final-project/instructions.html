@@ -3,23 +3,62 @@
 
     <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../final-project/css/barista.css"/>
+    <link rel="stylesheet" href="../final-project/css/barista-other-pages.css"/>
     <!--<script defer src=""></script>-->
     <title>Barista</title>
     </head>
 
 
     <body>
-        <!--<img src="../final-project/images/cafe-background.JPG">-->
-        <!--maybe a figma video runthrough?-->
         <nav>
             <h2>BARISTA</h2>
-            <a href="title-page.html"><button>Home</button></a>
-            <a href="todays-orders.html"><button>Play</button></a>
+            <a href="title-page.html" class="nav-button"><button>HOME</button></a>
+            <a href="todays-orders.html" class="nav-button"><button>PLAY</button></a>
         </nav>
 
-        <h2>How to Play</h2>
+        <main>
+
+            <div class="ingredient-table">
+                <h3>Ingredients</h3>
+                <table>
+                    <tr>
+                        <td><p class="table-text">Espresso</p>
+                        <img class="ing-table-img" id="espresso" src="../final-project/images/espresso.png" alt="espresso ingredient" data-micron="tada"></td>
+                       
+                        <td><p class="table-text">Hot Chocolate</p>
+                        <img class="ing-table-img" id="hot-chocolate" disabled="false" src="../final-project/images/red-x.png" alt="hot chocolate ingredient" data-micron="tada"></td>
+                    </tr>
+
+                    <tr>
+                        <td><p class="table-text">Ice</p>
+                        <img class="ing-table-img" id="ice" src="../final-project/images/ice-cubes.png" alt="ice ingredient" data-micron="tada"></td>
+                        
+                        <td><p class="table-text">Water</p>
+                        <img class="ing-table-img" id="water" src="../final-project/images/green-check.png" alt="water ingredient" data-micron="tada"></td>
+                    </tr>
+
+                    <tr>
+                        <td><p class="table-text">Steamed Milk</p>
+                        <img class="ing-table-img" id="steamed-milk" src="../final-project/images/green-check.png" alt="steamed milk ingredient" data-micron="tada"></td>
+                        
+                        <td><p class="table-text">Milk Foam</p>
+                        <img class="ing-table-img" id="milk-foam" src="../final-project/images/milk-foam.png" alt="milk foam ingredient" data-micron="tada"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="order-space">
+                <div class="order-space-header">
+                    <a href="../final-project/todays-orders.html"><button class="order-header-button">BACK</button></a> 
+                    <p class="drink-title"> Instructions</p>
+                    <button class="order-header-button" id="hint-button">HINT</button>
+                </div>
+                <p>listed here (consult readme)</p>
+                <button class="submit-button">SUBMIT</button> 
+            </div>
+        </main>
 
     </body>
 
 </html>
+

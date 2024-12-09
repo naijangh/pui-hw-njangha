@@ -131,12 +131,13 @@ function gameOver(drinkLength) {
     //if number of ingredients selected match the length of the corresponding array, the rating is displayed
     if (ingredientTotal === drinkLength.length) {
         displayRating();
+        submitButton.classList.add("disabled");
     //otherwise, user receives an alert that there are still ingredients missing
     } else if (ingredientTotal !== drinkLength.length) {
         window.alert("There are still ingredients needed for your drink!");
     }
     //disabling clicking events after initial click (referencing slingacademy.com)
-    submitButton.classList.add("disabled"); 
+     
 
 }
 
