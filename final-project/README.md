@@ -6,6 +6,8 @@ Please test the interface at the following screen sizes:
 * Standard: 2000 x 1550
 * Smaller size: 1125 x 1350 (content becomes a column)
 
+https://naijangh.github.io/pui-hw-njangha/final-project/title-page.html
+
 ## Accessibility Check
 
 Title Page:
