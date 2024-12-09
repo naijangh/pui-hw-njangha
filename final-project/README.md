@@ -9,9 +9,9 @@ Please test the interface at the following screen sizes:
 [BARISTA](https://naijangh.github.io/pui-hw-njangha/final-project/title-page.html)
 
 ## Accessibility Check
-
+![Barista HiFi 2](../final-project/images/hifi2.1.png)
 Title Page:
-![summary for title page](../final-project/images/title-page-summary.jpg)
+![summary for title page](../final-project/images/title-page-summary.JPG)
 ![details for title page](../final-project/images/title-page-details.jpg)
 
 Order Page:
@@ -19,12 +19,12 @@ Order Page:
 ![details for order page](../final-project/images/order-page-details.jpg)
 
 Drink Creation Page:
-![summary for drink creation page](../final-project/images)
-![details for drink creation page](../final-project/images)
+![summary for drink creation page](../final-project/images/creation-page-summary.JPG)
+![details for drink creation page](../final-project/images/creation-page-details.JPG)
 
 Instructions Page:
-![summary for instructions page](../final-project/images)
-![details for instructions page](../final-project/images)
+![summary for instructions page](../final-project/images/instructions-page-summary.JPG)
+![details for instructions page](../final-project/images/instructions-page-details.JPG)
 
 ## Part 1: Website Description
 
