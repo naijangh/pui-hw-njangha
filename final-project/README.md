@@ -11,6 +11,8 @@ https://naijangh.github.io/pui-hw-njangha/final-project/title-page.html
 ## Accessibility Check
 
 Title Page:
+(../final-project/images/title-page-summary.jpg)
+(../final-project/images/title-page-details.jpg)
 
 Order Page:
 
