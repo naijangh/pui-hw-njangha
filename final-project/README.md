@@ -13,13 +13,13 @@ Please test the interface at the following screen sizes:
 ![accesibility summary and details for the title page](../final-project/images/title-page.jpg)
 
 ### Order Page:
-![accesibility summary and details for the order page](../final-project/images/orders-page.JPG)
+![accesibility summary and details for the order page](../final-project/images/orders-page.jpg)
 
 ### Drink Creation Page:
-![accesibility summary and details for the drink creation page](../final-project/images/creation-page.JPG)
+![accesibility summary and details for the drink creation page](../final-project/images/creation-page.jpg)
 
 ### Instructions Page:
-![accesibility summary and details for the instructions page](../final-project/images/instructions-page.JPG)
+![accesibility summary and details for the instructions page](../final-project/images/instructions-page.jpg)
 
 ## Part 1: Website Description
 
