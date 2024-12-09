@@ -28,14 +28,6 @@ const waterIng = document.querySelector("#water");
 const steamedMilkIng = document.querySelector("#steamed-milk");
 const milkFoamIng = document.querySelector("#milk-foam");
 
-/*const menu = {
-    cappuccino: ["espresso", "steamed-milk", "milk-foam"],
-    macchiato: ["espresso", "steamed-milk"],
-    americano: ["espresso", "water"]
-}
-    const menu = [{ drink: "cappuccino", ingredients: ["egg", "milk"],}, {drink: "macchiato", ingredients: ["egg", "milk", "honey"],},];
-*/
-
 //.bind to pass a parameter. null to ignore 'this' which is required first parameter of bind from  https://weekendprojects.dev/ 
 
 //on load, the params are pulled so the correct set of ingredients can be used during the game
@@ -211,7 +203,3 @@ function displayRating() {
     ratingElement.innerText = "Rating: " + rankingTotal + "/3";
 }
 
-
-
-
-//full cup with loading animation?
