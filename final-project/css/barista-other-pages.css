@@ -1,4 +1,4 @@
-/*media queries!*/
+
 
 body {
     background-image: url("cafe-background.JPG");
@@ -238,4 +238,12 @@ h3 {
 #loading-image {
     width: 500px;
     height: 500px;
+}
+
+/*media queries!*/
+@media (max-width: 1392px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
 }
