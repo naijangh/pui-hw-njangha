@@ -34,7 +34,7 @@ Please test the interface at the following screen sizes:
 2. Click on the "Play" button to start the game.
 3. From the list of drinks on the next page, decide on the beverage you want to recreate, and click the "Create" button.
 4. From the table of ingredients, select the ones you think go into the beverage one at a time. The ingredient will turn into a green check if it is correct or a red x if it is incorrect.
-5. If you need a hint, click on the "Hint" button to learn how many ingredients there are.
+5. If you need a hint, click on the "Hint" button to learn how many ingredients there are in the drink.
 6. Click the "Submit" button if you think you are done. 
 7. The cup will fill up and give you a rating (based on how many you guessed right/wrong) if all the ingredients are guessed.
 8. If you are missing ingredients and click "Submit", you will encounter a pop-up that alerts you of missing ingredients.
