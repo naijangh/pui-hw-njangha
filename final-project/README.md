@@ -9,16 +9,16 @@ Please test the interface at the following screen sizes:
 [BARISTA](https://naijangh.github.io/pui-hw-njangha/final-project/title-page.html)
 
 ## Accessibility Check
-###Title Page:
+### Title Page:
 ![accesibility summary and details for the title page](../final-project/images/title-page.JPG)
 
-###Order Page:
+### Order Page:
 ![accesibility summary and details for the order page](../final-project/images/orders-page.JPG)
 
-###Drink Creation Page:
+### Drink Creation Page:
 ![accesibility summary and details for the drink creation page](../final-project/images/creation-page.JPG)
 
-###Instructions Page:
+### Instructions Page:
 ![accesibility summary and details for the instructions page](../final-project/images/instructions-page.JPG)
 
 ## Part 1: Website Description
